@@ -1,15 +1,15 @@
-section#destinos {
-    display: grid;
-    grid-template-columns: auto 350px 350px auto;
-    grid-gap: 15px;
-}
-
-section#destinos article {
+section article {
     background-color: #001F3F;
     color: #FFF;
     padding: 10px 35px;
     text-align: center;
     border-radius: 20px;
+    margin: 2%;
+}
+
+section#destinos {
+    display: grid;
+    grid-template-columns: auto 35% 35% auto;
 }
 
 article#planetaAurora, article#galaxiaEspejismo {
@@ -19,3 +19,24 @@ article#planetaAurora, article#galaxiaEspejismo {
 article#nebulosaCelestial, article#lunaEspectral {
     grid-column: 3;
 }
+
+section#preparaciones {
+    display: grid;
+    grid-template-columns: auto 72% auto;
+    grid-gap: 15px;
+}
+
+section#preparaciones article {
+    grid-column: 2;
+}
+
+
+@media only screen and (max-width: 850px) {
+    section#destinos {
+        grid-template-columns: auto 70% auto;
+    }
+
+    section#destinos article {
+        grid-column: 2;
+    }
+  }
