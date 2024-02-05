@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #000;
+    padding: 20px;
+}
+
+header nav ul {
+    margin: 0px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-column: 3;
+    justify-content: start;
+}
+
+header nav ul li a, .activo span {
+    font-family: "Orbitron";
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 25px;
+}
+
+.activo span {
+    margin: 0px;
+    padding: 20px 25px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px 15px 0px 0px;
+}
+
+header nav ul li a:hover {
+    background-color: #001f3f;
+    color: #ffd700;
+    border-radius: 15px 15px 0px 0px;
+}
