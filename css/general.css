@@ -4,9 +4,18 @@ body {
 
 header nav {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     background-color: #000;
     padding: 20px;
+    align-items: end;
+}
+
+header img {
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 5px;
 }
 
 header nav ul {
@@ -18,7 +27,8 @@ header nav ul {
     justify-content: start;
 }
 
-header nav ul li a, .activo span {
+header nav ul li a,
+.activo span {
     font-family: "Orbitron";
     font-size: 25px;
     text-decoration: none;
@@ -38,4 +48,66 @@ header nav ul li a:hover {
     background-color: #001f3f;
     color: #ffd700;
     border-radius: 15px 15px 0px 0px;
+}
+
+@media only screen and (max-width: 1350px) {
+    header nav ul li a,
+    .activo span {
+        font-size: 15px;
+    }
+
+    header img {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    header nav ul li a,
+    .activo span {
+        font-size: 15px;
+        padding: 20px 10px;
+    }
+
+    header img {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    body header nav ul {
+        grid-template-rows: 51px 51px 51px 51px 51px 51px;
+        grid-template-columns: auto;
+        justify-content: start;
+        text-align: right;
+    }
+
+    header nav {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        justify-content: end;
+    }
+
+    header nav ul li a,
+    .activo span {
+        font-size: 25px;
+        padding: 10px 0px 10px 10px;
+    }
+
+    header img {
+        width: 40%;
+    }
+
+    .activo span {
+        margin: 0px;
+        padding: 20px 25px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+    header nav ul li a:hover {
+        background-color: #001f3f;
+        color: #ffd700;
+        border-radius: 15px 15px 0px 0px;
+    }
 }
