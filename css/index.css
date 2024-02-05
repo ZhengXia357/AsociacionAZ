@@ -1,3 +1,7 @@
+@font-face {
+    font-family: h1Index;
+    src: url(../Resources/fonts/MagicFlavour.ttf);
+}
 body {
     width: 100%;
     min-height: 100vh;
@@ -118,10 +122,8 @@ body {
 .div_derecha_Articulo_Index{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);}
 
-
-}
 #parrafoEsquiar{
     color: aliceblue;
     grid-row: 2/5;
@@ -132,7 +134,38 @@ body {
     grid-row: 3/4;
     grid-column: 3/5;
     height: 30%;
-    width: 100%;
+
     
 
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10%;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #1024DF, #222D94,#5c66c7, #222D94,#1024DF);
+    color: rgb(204, 212, 255);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+#botonEsquiar:hover{
+    background-color:#1024DF;
+}
+.articuloIndex2{
+   height: 100vh;
+   margin-top: 10%;
+   
+}
+.div_articuloIndex1{
+    background-image: url(../img/casaEuropaInterior.jpeg);
+    height: 100vh;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2%;
+}
+#h1CasaLuna{
+    color: #dcdcfc;
+    font-family: h1Index;
 }
