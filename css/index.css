@@ -113,6 +113,8 @@ body {
     margin-bottom: 0;
     text-align: center;
 }
+
+
 .div_derecha_Articulo_Index{
     display: grid;
     grid-template-columns: repeat(6,1fr);
