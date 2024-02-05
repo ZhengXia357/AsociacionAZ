@@ -25,13 +25,19 @@ section#news {
 }
 
 article#nacimiento,
-article#nebulosaCelestial {
+article#nebulosaCelestial,
+#naveStellar {
   grid-column: 2;
 }
 
 article#octopus
-article#lunaEspectral {
+article#viajeCosmos,
+#viajeElon {
   grid-column: 3;
+}
+
+.imagenNoticia {
+    width: 100%;
 }
 
 section#preparaciones {
