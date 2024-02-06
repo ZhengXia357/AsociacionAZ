@@ -26,13 +26,13 @@ section#news {
 
 article#nacimiento,
 article#nebulosaCelestial,
-#naveStellar {
+article#naveStellar {
   grid-column: 2;
 }
 
-article#octopus
+article#octopus,
 article#viajeCosmos,
-#viajeElon {
+article#viajeElon {
   grid-column: 3;
 }
 
