@@ -1,5 +1,7 @@
 body {
     margin: 0px;
+    display: grid;
+    grid-template-rows: auto auto auto;
 }
 
 header nav {
@@ -85,12 +87,13 @@ header nav ul li a:hover {
         grid-template-rows: auto auto auto;
         grid-template-columns: auto;
         justify-content: end;
+        padding-right: 0px;
     }
 
     header nav ul li a,
     .activo span {
         font-size: 25px;
-        padding: 10px 0px 10px 10px;
+        padding: 10px;
     }
 
     header img {
@@ -98,16 +101,33 @@ header nav ul li a:hover {
     }
 
     .activo span {
-        margin: 0px;
-        padding: 20px 25px;
-        background-color: #fff;
-        color: #000;
-        border-radius: 15px 15px 0px 0px;
+        border-radius: 15px 0px 0px 15px;
     }
     
     header nav ul li a:hover {
         background-color: #001f3f;
         color: #ffd700;
-        border-radius: 15px 15px 0px 0px;
+        border-radius: 15px 0px 0px 15px;
     }
+}
+
+main {
+    min-height: 900px;
+}
+
+footer {
+    background-color: #000;
+}
+
+footer p {
+    color: #FFF;
+}
+
+a {
+    color: #800080;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffd700;
 }
