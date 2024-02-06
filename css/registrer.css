@@ -1,0 +1,44 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.mainRegistro{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.sectionDerecha{
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(7,1fr);
+}
+.h1Registro{
+    grid-column: 2/6;
+    margin: 0;
+    align-self: center;
+    text-align: center;
+}
+.formularioRegistro{
+    width: 100%;
+    grid-column: 2/6;
+    grid-row: 2/7;
+    display: grid;
+    grid-template-rows: repeat(7,1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+.input_texto{
+    width: 40%;
+    height: 50%;
+}
+.caja_nombre_label{
+    grid-column: 1/3;
+    display: flex;
+    flex-wrap: wrap;
+}
+.name_Registro{
+    flex: 1;
+}
