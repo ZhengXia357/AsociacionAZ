@@ -16,6 +16,7 @@ header nav {
     background-color: #000;
     padding: 20px;
     align-items: end;
+    justify-content: center;
 }
 
 header img {

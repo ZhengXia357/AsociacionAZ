@@ -32,6 +32,29 @@ section#news article:nth-child(even) {
   grid-column: 3;
 }
 
+section#new {
+  display: grid;
+  grid-template-columns: auto 70% auto;
+}
+
+section#new article {
+  grid-column: 2;
+}
+
+section#new article img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+section#new article {
+  text-align: initial;
+  font-size: 20px;
+}
+
+header > div {
+  margin: 0px 10%;
+}
+
 @media only screen and (max-width: 850px) {
   section#news {
     grid-template-columns: auto 70% auto;
@@ -39,5 +62,9 @@ section#news article:nth-child(even) {
 
   section#news article:nth-child(even), section#news article:nth-child(even) {
     grid-column: 2;
+  }
+
+  section#new {
+    grid-template-columns: auto 90% auto;
   }
 }
