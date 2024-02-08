@@ -7,46 +7,200 @@ body{
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
 }
-.sectionDerecha{
-    display: grid;
-    grid-row: 1/3;
+.section{
+    height: 85%;
+}
+
+.Izquierda{
+    grid-column: 1/2;
+   background-color: rgb(209, 190, 166);
+    justify-self: end;
+    align-self:center ;
+    min-width: 600px;
+}
+.Derecha{
     grid-column: 2/3;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(7,1fr);
-}
-.h1Registro{
-    grid-column: 2/6;
-    margin: 0;
-    align-self: center;
-    text-align: center;
+    background-color: rgb(197, 202, 250);
+    justify-self: start;
+    align-self:center ;
+    min-width: 420px;
+    border-radius: 0 30px 30px 0;
 }
 .formularioRegistro{
     width: 100%;
-    grid-column: 2/6;
-    grid-row: 2/7;
+    height: 100%;
     display: grid;
     grid-template-rows: repeat(7,1fr);
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 100%;
 }
-.input_texto{
-    width: 50%;
-}
-.caja_nombre_label{
-    grid-column: 1/3;
+.cajaNombreForm{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);   
 }
-.name_Registro{
+.labelNombreApellido{
+    margin-left: 4%;
+    font-size: 1.5rem;
+    align-self: end;
+    margin-bottom: 5%;
     grid-column: 1/3;
-    width: 50%;
+}
+.input{
+    border-radius: 10px;
+    min-height: 1px;
+    height: 37px;
+    box-shadow: 2px 1px 10px;
+
+
 }
 .nombre{
     grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self: center;
+    width: 150px;
+
 }
 .apellido{
-    grid-column: 2/3;
     grid-row: 2/3;
+    grid-column: 2/3;
+    justify-self: end;
+    justify-self: center;
+    width: 150px;
+
 }
+
+.cajaIdentidadForm{
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.labelIdentidad{
+    margin-top: 1%;
+    margin-left: 22%;
+
+}
+.dni_nie{
+    width: 140px;
+
+}
+
+.cajaEmail{
+    grid-row: 3/4;
+    display: flex;
+     gap :30px; ;
+     align-items: center;
+}
+.labelEmail{
+ margin-left: 7%;
+}
+.email{
+    width: 200px;
+
+}
+.cajaCivil{
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 10px;
+
+}
+.labelEstado{
+   align-self: end;
+    justify-self: center;
+    margin-right: 10%;
+
+}
+.opciones{
+    height: 40px;
+    width: 130px;
+    grid-row: 2/3;
+    border-radius: 12px;
+    justify-self: center;
+    background-color: rgb(185, 175, 243);
+    box-shadow: 2px 1px 10px;
+
+}
+.cajaCivilHija{
+    display: grid;
+    row-gap: 8px;
+}
+
+
+
+.cajaCivilHija2{
+    display: grid;
+
+}
+.diasOpc{
+    height: 40px;
+    width: 130px;
+    background-color: rgb(185, 175, 243);
+    border-radius: 12px;
+    justify-self: center;
+    box-shadow: 2px 1px 10px;
+
+}
+
+.labelDiasDispo{
+    align-self: end;
+    margin-bottom: 4%;
+    justify-self: center;
+    margin-right: 10%;
+
+}
+
+.cajaTelefono{
+    grid-row: 5/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+
+}
+.number{
+    height: 26px;
+    width: 125px;
+    margin-top: 2%;
+    box-shadow: 2px 1px 9px;
+
+}
+.labelTelefono{
+    margin-top: 1%;
+}
+
+
+
+.cajaTextTarea{
+    grid-row: 6/7;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.labelTextArea{
+    justify-self: start;
+    margin-left: 2%;
+    
+}
+.textArea{
+    min-width:250px;
+    max-width: 250px;
+    min-height: 80px;
+    max-height: 80px;
+    box-shadow: 3px 1px 9px;
+}
+
+.cajaBotones{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.botones{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    box-shadow: 3px 1px 20px;
+}
+/*UNETE A STELLAR US DONDE TU PASION POR EL UNIVERSO ENCUENTRA SU COMUNIDAD*/
