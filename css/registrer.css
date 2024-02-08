@@ -31,14 +31,22 @@ body{
     grid-template-columns: repeat(2,1fr);
 }
 .input_texto{
-    width: 40%;
-    height: 50%;
+    width: 50%;
 }
 .caja_nombre_label{
     grid-column: 1/3;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);   
 }
 .name_Registro{
-    flex: 1;
+    grid-column: 1/3;
+    width: 50%;
+}
+.nombre{
+    grid-row: 2/3;
+}
+.apellido{
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
