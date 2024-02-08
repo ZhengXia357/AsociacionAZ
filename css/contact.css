@@ -1,0 +1,18 @@
+  #contacto{
+    text-align: justify;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 135%;
+    padding: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #mapa{
+    width: 110%;
+
+  }
+  
+  #boton{
+    text-align: justify;
+  }

@@ -8,6 +8,7 @@ section article {
   text-align: center;
   border-radius: 20px;
   margin: 2%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 section article div {
@@ -30,6 +31,22 @@ section#news article:nth-child(odd) {
 
 section#news article:nth-child(even) {
   grid-column: 3;
+}
+
+.imagenNoticia {
+  width: 60%;
+}
+.fechaNoticia{
+  text-align: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 2%;
+}
+.articulo{
+  text-align: justify;
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-indent: 2%;
+  line-height: 135%;
 }
 
 @media only screen and (max-width: 850px) {
