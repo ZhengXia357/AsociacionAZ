@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="../css/general.css">
-    <link type="text/css" rel="stylesheet" href="../css/register.css">
-    <script type="text/javascript" src="../js/registrer.js"></script>
-    <script type="text/javascript" src="../js/general.js"></script>
-    <title>Regístrate</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="../css/general.css">
+  <link type="text/css" rel="stylesheet" href="../css/registrer.css">
+  <script type="text/javascript" src="../js/registrer.js"></script>
+  <script type="text/javascript" src="../js/general.js"></script>
+  <title>Regístrate</title>
 </head>
+
 <body>
     <header>
         <nav>
-          <a href="./index.html"
-            ><img
-              src="../img/logoSinFondo.png"
-              alt="Logo de Stellar Us"
-              title="STELLAR US"
-          /></a>
+            <a href="./index.html"
+              ><img
+                src="../img/logoSinFondo.png"
+                alt="Logo de Stellar Us"
+                title="STELLAR US"
+            /></a>
             <ul>
               <li>
                 <a href="./destinations.html">Destinos</a>
@@ -37,19 +39,79 @@
               </li>
             </ul>
           </nav>
-        <h1>REGÍSTRATE</h1>
     </header>
-    <main>
-        <section>
-            <article>
 
-            </article>
-        </section>
-        <section>
-            <article>
-                
-            </article>
-        </section>
+    <main class="mainRegistro">
+  
+      <section class="section Izquierda">
+        <h1 class="h1Registro">EXPLORA EL UNIVERSO CON STELLAR US</h1>
+        <p class="parrafoRegistro">Regístrate ahora para explorar nuevos horizontes, descubrir mundos desconocidos y vivir experiencias que desafían los límites de lo imaginable. El viaje de tus sueños está a solo un clic de distancia. ¡Hazte miembro hoy y prepárate para alcanzar las estrellas!"</p>
+      </section>
+      <section class="section Derecha">
+
+        <form class="formularioRegistro" >
+
+          <div class="cajaNombreForm">
+            <label class="labelNombreApellido">Nombre y Apellido</label>
+            <input type="text" class="input nombre" placeholder="  Nombre Completo">
+            <input type="text" class="input apellido" placeholder="  Apellido">
+          </div>
+
+          <div class="cajaIdentidadForm">
+            <label class="labelIdentidad">DNI / NIE</label>
+            <input type="text" class="input dni_nie" placeholder="  Documento">
+          </div>
+          <div class="cajaEmail">
+            <label class="labelEmail">Correo Electronico</label>
+            <input type="email" class="input email" placeholder="  example@example.com">
+          </div>
+
+          <div class="cajaCivil">
+
+            <div class="cajaCivilHija">
+               <label class="labelEstado">Estado Civil</label>
+            <select class="opciones">
+              <option selected>soltero</option>
+              <option>casado</option>
+              <option>divoriciado</option>
+            </select>
+            </div>
+
+              <div class="cajaCivilHija2">
+                <label class="labelDiasDispo">Disponibilidad</label>
+                <select class="diasOpc">
+                  <option selected>Lunes</option>
+                  <option>Martes</option>
+                  <option>Miercoles</option>
+                  <option>Jueves</option>
+                  <option>Viernes</option>
+                  <option>Sabado</option>
+                  <option>Domingo</option>
+                </select>
+              </div>
+            
+          </div>
+          
+
+          <div class="cajaTelefono">
+            <label class="labelTelefono">Telefono</label>
+            <input type="number" class="input number">
+          </div>
+   
+          <div class="cajaTextTarea">
+            <label class="labelTextArea" for="comentario">Observaciones</label>
+            <textarea name="comentario" class="textArea" ></textarea>
+          </div>
+
+          <div class="cajaBotones">
+            <input type="submit" class="botones">
+            <input type="reset"  class="botones">
+          </div>
+        </form>
+
+
+      </section>
+
     </main>
     <footer>
         <p>Propiedad de Stellar Us.&copy;</p></br>
@@ -60,4 +122,5 @@
         <a href="../html/contact.html">Contacta con el equipo de Stellar Us</a>
     </footer>
 </body>
+
 </html>
