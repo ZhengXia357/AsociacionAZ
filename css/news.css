@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 section article {
@@ -24,73 +24,47 @@ section#news {
   grid-template-columns: auto 35% 35% auto;
 }
 
-article#nacimiento,
-article#nebulosaCelestial {
+section#news article:nth-child(odd) {
   grid-column: 2;
 }
 
-article#octopus
-article#lunaEspectral {
+section#news article:nth-child(even) {
   grid-column: 3;
 }
 
-section#preparaciones {
+section#new {
   display: grid;
-  grid-template-columns: auto 72% auto;
-  grid-gap: 15px;
+  grid-template-columns: auto 70% auto;
 }
 
-section#preparaciones article {
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-rows: auto auto auto auto;
-}
-
-section#preparaciones article div:first-child {
-    grid-column: 1;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px 0px 0px 20px;
-}
-
-section#preparaciones article div:last-child {
-    grid-column: 3;
-    background-size: cover;
-    border-radius: 0px 20px 20px 0px;
-}
-
-section#preparaciones article h2,
-section#preparaciones article ol,
-section#preparaciones article p {
+section#new article {
   grid-column: 2;
 }
 
-section#preparaciones article {
-  grid-column: 2;
+section#new article img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
 }
 
-section#preparaciones ol {
-  text-align: left;
-  padding: 0px 30px 0px 40px;
+section#new article {
+  text-align: initial;
+  font-size: 20px;
 }
 
-section#preparaciones article > p {
-    padding: 0px 30px;
-}
-
-section#preparaciones div.fondo {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/fondoGalaxia.png);
-    grid-row: 1 / span 4;
+header > div {
+  margin: 0px 10%;
 }
 
 @media only screen and (max-width: 850px) {
-  section#destinos {
+  section#news {
     grid-template-columns: auto 70% auto;
   }
 
-  section#destinos article {
+  section#news article:nth-child(even), section#news article:nth-child(even) {
     grid-column: 2;
+  }
+
+  section#new {
+    grid-template-columns: auto 90% auto;
   }
 }
