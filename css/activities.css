@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 section article {
@@ -8,6 +8,7 @@ section article {
   text-align: center;
   border-radius: 20px;
   margin: 2%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 section article div {
@@ -37,7 +38,7 @@ article#viajeElon {
 }
 
 .imagenNoticia {
-    width: 100%;
+  width: 100%;
 }
 
 section#preparaciones {
@@ -53,16 +54,16 @@ section#preparaciones article {
 }
 
 section#preparaciones article div:first-child {
-    grid-column: 1;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px 0px 0px 20px;
+  grid-column: 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 0px 0px 20px;
 }
 
 section#preparaciones article div:last-child {
-    grid-column: 3;
-    background-size: cover;
-    border-radius: 0px 20px 20px 0px;
+  grid-column: 3;
+  background-size: cover;
+  border-radius: 0px 20px 20px 0px;
 }
 
 section#preparaciones article h2,
@@ -80,15 +81,15 @@ section#preparaciones ol {
   padding: 0px 30px 0px 40px;
 }
 
-section#preparaciones article > p {
-    padding: 0px 30px;
+section#preparaciones article>p {
+  padding: 0px 30px;
 }
 
 section#preparaciones div.fondo {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/fondoGalaxia.png);
-    grid-row: 1 / span 4;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fondoGalaxia.png);
+  grid-row: 1 / span 4;
 }
 
 @media only screen and (max-width: 850px) {
