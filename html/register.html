@@ -44,26 +44,30 @@
     <main class="mainRegistro">
   
       <section class="section Izquierda">
-        <h1 class="h1Registro">EXPLORA EL UNIVERSO CON STELLAR US</h1>
+        <h1 class="h1Registro">EXPLORA EL UNIVERSO <br>CON STELLAR US</h1>
         <p class="parrafoRegistro">Regístrate ahora para explorar nuevos horizontes, descubrir mundos desconocidos y vivir experiencias que desafían los límites de lo imaginable. El viaje de tus sueños está a solo un clic de distancia. ¡Hazte miembro hoy y prepárate para alcanzar las estrellas!"</p>
       </section>
+
+
+  
+
       <section class="section Derecha">
 
         <form class="formularioRegistro" >
 
           <div class="cajaNombreForm">
-            <label class="labelNombreApellido">Nombre y Apellido</label>
-            <input type="text" class="input nombre" placeholder="  Nombre Completo">
-            <input type="text" class="input apellido" placeholder="  Apellido">
+            <label class="labelNombreApellido" for="nombres">Nombre y Apellido</label>
+            <input type="text" class="input nombre" placeholder="  Nombre Completo" name="nombres">
+            <input type="text" class="input apellido" placeholder="  Apellido" name="nombres">
           </div>
 
           <div class="cajaIdentidadForm">
-            <label class="labelIdentidad">DNI / NIE</label>
-            <input type="text" class="input dni_nie" placeholder="  Documento">
+            <label class="labelIdentidad" for="identidad">DNI / NIE</label>
+            <input type="text" class="input dni_nie" placeholder="  Documento" name="identidad">
           </div>
           <div class="cajaEmail">
-            <label class="labelEmail">Correo Electronico</label>
-            <input type="email" class="input email" placeholder="  example@example.com">
+            <label class="labelEmail" for="correo">Correo Electronico</label>
+            <input type="email" class="input email" placeholder="  example@example.com" name="correo">
           </div>
 
           <div class="cajaCivil">
@@ -103,16 +107,42 @@
             <textarea name="comentario" class="textArea" ></textarea>
           </div>
 
+
           <div class="cajaBotones">
-            <input type="submit" class="botones">
+            <input type="button" class="botones" onclick="mostrarPopUp()" value="Enviar">
             <input type="reset"  class="botones">
           </div>
+
+
         </form>
 
 
       </section>
 
+
+
+      <div class="popUp" id="popUp">
+        <img src="../img/logoStellarUs.jpg" class="imagenPop">
+        
+        <h2 class="h2Pop">¡Bienvenidx a Stellar US!</h2>
+        <p id="nombrePopUp"></p>
+        <button type="submit" class="botonPopUP" onclick="cerrarPopUp()">OK</button>
+      </div>
+
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer>
         <p>Propiedad de Stellar Us.&copy;</p></br>
         <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</a></br>
@@ -121,6 +151,10 @@
         <a href="mailto:rpc_155@educa.madrid.org">Contacta con Rubén Pérez Cantal</a></br>
         <a href="../html/contact.html">Contacta con el equipo de Stellar Us</a>
     </footer>
-</body>
+
+    <script src="../js/registrer.js"></script>
+
+  </body>
+
 
 </html>
