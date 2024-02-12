@@ -31,7 +31,7 @@ header nav ul {
     margin: 0px;
     list-style-type: none;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
     grid-column: 3;
     justify-content: start;
 }
@@ -59,7 +59,7 @@ header nav ul li a:hover {
     border-radius: 15px 15px 0px 0px;
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1500px) {
     header nav ul li a,
     .activo span {
         font-size: 15px;
@@ -76,7 +76,7 @@ header nav ul li a:hover {
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1080px) {
     header nav ul li a,
     .activo span {
         font-size: 15px;
@@ -88,7 +88,7 @@ header nav ul li a:hover {
     }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 890px) {
     body header nav ul {
         grid-template-rows: 51px 51px 51px 51px 51px 51px;
         grid-template-columns: auto;
