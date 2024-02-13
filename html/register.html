@@ -53,11 +53,11 @@
 
       <section class="section Derecha">
 
-        <form class="formularioRegistro" >
+        <form class="formularioRegistro">
 
           <div class="cajaNombreForm">
             <label class="labelNombreApellido" for="nombres">Nombre y Apellido</label>
-            <input type="text" class="input nombre" placeholder="  Nombre Completo" name="nombres">
+            <input type="text" class="input nombre" placeholder="  Nombre Completo" name="nombres" required>
             <input type="text" class="input apellido" placeholder="  Apellido" name="nombres">
           </div>
 
@@ -109,7 +109,7 @@
 
 
           <div class="cajaBotones">
-            <input type="button" class="botones" onclick="mostrarPopUp()" value="Enviar">
+            <input type="reset" class="botones" onclick="validarInput()" value="Enviar">
             <input type="reset"  class="botones">
           </div>
 
