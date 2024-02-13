@@ -60,6 +60,7 @@ header nav ul li a:hover {
 }
 
 @media only screen and (max-width: 1350px) {
+
     header nav ul li a,
     .activo span {
         font-size: 15px;
@@ -77,6 +78,7 @@ header nav ul li a:hover {
 }
 
 @media only screen and (max-width: 950px) {
+
     header nav ul li a,
     .activo span {
         font-size: 15px;
@@ -116,7 +118,7 @@ header nav ul li a:hover {
     .activo span {
         border-radius: 15px 0px 0px 15px;
     }
-    
+
     header nav ul li a:hover {
         background-color: #001f3f;
         color: #ffd700;
@@ -129,11 +131,26 @@ main {
 }
 
 footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
     background-color: #000;
 }
 
-footer p {
-    color: #FFF;
+footer div>a {
+    font-weight: bold;
+}
+
+footer div:first-child img {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 40px
+}
+
+footer div:last-child {
+    font-size: 70%;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 a {
