@@ -1,3 +1,5 @@
+var nombre = document.getElementById('nombreInput');
+console.log(nombre)
 
 var pop = document.getElementById('popUp')
 console.log(pop);
@@ -7,7 +9,7 @@ console.log(inputs);
 function mostrarPopUp(){
 
     pop.classList.add("mostrar-pop");
-
+    document.getElementById('nombrePopUp').innerHTML= nombre.value;
 
 }
 function cerrarPopUp(){

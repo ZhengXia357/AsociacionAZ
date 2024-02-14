@@ -285,3 +285,7 @@ label{
     font-size: 20px;
     cursor: pointer;
 }
+#nombrePopUp{
+    justify-self: center;
+    font-size: 2rem;
+}

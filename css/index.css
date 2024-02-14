@@ -166,7 +166,7 @@ body {
     grid-template-rows: repeat(6,1fr);
 }
 #h1CasaLuna{
-    color: rgba(48, 62, 143, 0.438);
+    color: rgb(255, 255, 255);
     font-family: h1Index;
     font-size: 5rem;
     grid-column: 1/7;
