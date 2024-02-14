@@ -52,7 +52,7 @@
                             destino. Te sorprenderás con las estimaciones de tiempo detalladas, ¡perfectas para planificar tus próximas aventuras
                             estelares!
                         </p>
-                        <form id="calculadora">
+                        <form id="calculadoraPeso">
                             <label for="destino">¿A dónde tienes pensado ir?</label>
                             <select name="destino" id="destino">
                                 <option value="planetaAurora">Planeta Aurora</option>
@@ -80,7 +80,7 @@
                 <article>
                     <div class="fondo"></div>
                     <div>
-                        <h2>Calculadora de Peso en Otros Planetas: Tu peso, tu mundo</h2>
+                        <h2>Calculadora de peso en otros planetas: tu peso, tu mundo</h2>
                         <p>
                             ¿Alguna vez imaginaste cómo sería pesar en Marte o la Luna? Ingresa tu peso en la Tierra y elige tu destino celestial.
                             ¡Descubre tu peso intergaláctico y diviértete compartiendo estos datos curiosos con amigos y familiares!
@@ -93,11 +93,14 @@
                 <article>
                     <div class="fondo"></div>
                     <div>
-                        <h2>Datos Curiosos del Espacio: Explora el cosmos</h2>
+                        <h2>Datos curiosos del espacio: explora el cosmos</h2>
                         <p>
                             Sumérgete en tarjetas informativas llenas de curiosidades fascinantes. Desde tormentas en Júpiter hasta agujeros negros
                             misteriosos, nuestro rincón cósmico te invita a descubrir los secretos más intrigantes del espacio.
                         </p>
+                        <button onclick="mostrarDatoCurioso()">¡Dato curioso!</button>
+                        <br />
+                        <span id="datoCurioso"></span>
                     </div>
                     <div class="fondo"></div>
                 </article>
@@ -106,11 +109,52 @@
                 <article>
                     <div class="fondo"></div>
                     <div>
-                        <h2>Interactividad Educativa: Desafía tu conocimiento</h2>
+                        <h2>Interactividad educativa: desafía tu conocimiento</h2>
                         <p>
                             ¿Te consideras un experto del espacio? Participa en nuestros cuestionarios y juegos educativos para poner a prueba tus
                             conocimientos. ¡Aprender sobre el universo nunca fue tan divertido!
                         </p>
+                        <div id="pregunta1" class="pregunta">
+                            <p>Pregunta 1: ¿Cuál es el planeta más grande del sistema solar?</p>
+                            <input type="radio" name="respuesta1" value="Mercurio" /> Mercurio
+                            <input type="radio" name="respuesta1" value="Jupiter" /> Júpiter
+                            <input type="radio" name="respuesta1" value="Venus" /> Venus
+                            <button onclick="verificarRespuesta(1)">Siguiente</button>
+                        </div>
+                        <div id="pregunta2" class="pregunta" hidden>
+                            <p>Pregunta 2: ¿Cuántas lunas tiene Marte?</p>
+                            <input type="radio" name="respuesta2" value="0" /> 0 <input type="radio" name="respuesta2" value="2" /> 2
+                            <input type="radio" name="respuesta2" value="1" /> 1
+                            <button onclick="verificarRespuesta(2)">Siguiente</button>
+                        </div>
+                        <div id="resultado" class="pregunta" hidden>
+                            <h2>¡Fin del cuestionario!</h2>
+                            <p>Tu puntuación es <span id="puntuacion"></span> de 2.</p>
+                        </div>
+                        <div id="pregunta3" class="pregunta" hidden>
+                            <p>Pregunta 3: ¿Cuál es la distancia promedio entre la Tierra y el Sol?</p>
+                            <input type="radio" name="respuesta3" value="93 millones de millas" /> 93 millones de millas
+                            <input type="radio" name="respuesta3" value="150 millones de kilómetros" /> 150 millones de kilómetros
+                            <input type="radio" name="respuesta3" value="30 años luz" /> 30 años luz
+                            <button onclick="verificarRespuesta(3)">Siguiente</button>
+                        </div>
+
+                        <div id="pregunta4" class="pregunta" hidden>
+                            <p>Pregunta 4: ¿Cuál es la galaxia más cercana a la Vía Láctea?</p>
+                            <input type="radio" name="respuesta4" value="Andrómeda" /> Andrómeda
+                            <input type="radio" name="respuesta4" value="Triángulo" /> Triángulo
+                            <input type="radio" name="respuesta4" value="Centaurus A" /> Centaurus A
+                            <button onclick="verificarRespuesta(4)">Siguiente</button>
+                        </div>
+
+                        <div id="pregunta5" class="pregunta" hidden>
+                            <p>Pregunta 5: ¿Qué es un agujero negro?</p>
+                            <input type="radio" name="respuesta5" value="Una estrella muy caliente" /> Una estrella muy caliente
+                            <input type="radio" name="respuesta5" value="Una región del espacio sin gravedad" /> Una región del espacio sin gravedad
+                            <input type="radio" name="respuesta5" value="Una concentración masiva de masa en un espacio pequeño" /> Una concentración
+                            masiva de masa en un espacio pequeño
+                            <button onclick="verificarRespuesta(5)">Siguiente</button>
+                        </div>
                     </div>
                     <div class="fondo"></div>
                 </article>
@@ -118,13 +162,82 @@
         </main>
         <aside></aside>
         <footer>
-            <p>Propiedad de Stellar Us.&copy;</p>
-            <br />
-            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</a><br />
-            <a href="mailto:pdcb02@educa.madrid.org">Contacta con Piero Dstefano Cisneros Bravo</a><br />
-            <a href="mailto:zhejiang.qiu@educa.madrid.org">Contacta con Zheng Xia Qiu Pan</a><br />
-            <a href="mailto:rpc_155@educa.madrid.org">Contacta con Rubén Pérez Cantal</a><br />
-            <a href="../html/contact.html">Contacta con el equipo de Stellar Us</a>
+            <div>
+                <a href="https://www.facebook.com/"
+                    ><img
+                        src="../img/rrss/facebook.png"
+                        onmouseout="this.src='../img/rrss/facebook.png';"
+                        onmouseover="this.src='../img/rrss/facebookBlanco.png'"
+                        alt="Facebook"
+                /></a>
+                <a href="https://twitter.com/?lang=es"
+                    ><img
+                        src="../img/rrss/gorjeo.png"
+                        onmouseout="this.src='../img/rrss/gorjeo.png';"
+                        onmouseover="this.src='../img/rrss/gorjeoBlanco.png'"
+                        alt="Twitter"
+                /></a>
+                <a href="https://www.instagram.com/?hl=es"
+                    ><img
+                        src="../img/rrss/instagram.png"
+                        onmouseout="this.src='../img/rrss/instagram.png';"
+                        onmouseover="this.src='../img/rrss/instagramBlanco.png'"
+                        alt="Instagram"
+                /></a>
+                <a href="mailto:info@stellarus.org"
+                    ><img
+                        src="../img/rrss/gmail.png"
+                        onmouseout="this.src='../img/rrss/gmail.png';"
+                        onmouseover="this.src='../img/rrss/gmailBlanco.png'"
+                        alt="Gmail"
+                /></a>
+                <a href="https://www.youtube.com/"
+                    ><img
+                        src="../img/rrss/youtube.png"
+                        onmouseout="this.src='../img/rrss/youtube.png';"
+                        onmouseover="this.src='../img/rrss/youtubeBlanco.png'"
+                        alt="Gmail"
+                        alt="YouTube"
+                /></a>
+                <a href="https://web.telegram.org/a/"
+                    ><img
+                        src="../img/rrss/telegrama.png"
+                        onmouseout="this.src='../img/rrss/telegrama.png';"
+                        onmouseover="this.src='../img/rrss/telegramaBlanco.png'"
+                        alt="Telegram"
+                /></a>
+                <a href="https://www.tiktok.com/es/"
+                    ><img
+                        src="../img/rrss/tik-tok.png"
+                        onmouseout="this.src='../img/rrss/tik-tok.png';"
+                        onmouseover="this.src='../img/rrss/tik-tokBlanco.png'"
+                        alt="TikTok"
+                /></a>
+                <a href="https://web.whatsapp.com/"
+                    ><img
+                        src="../img/rrss/whatsapp.png"
+                        onmouseout="this.src='../img/rrss/whatsapp.png';"
+                        onmouseover="this.src='../img/rrss/whatsappBlanco.png'"
+                        alt="WhatsApp"
+                /></a>
+            </div>
+            <div>
+                <a href="../html/index.html">Página Principal</a><span> |</span> <a href="">Política de privacidad</a><span> |</span>
+                <a href="">Cookies</a><span> |</span>
+                <a href="../html/contact.html">Contacta</a>
+            </div>
+            <div>
+                <span
+                    >Asociación dedicada a explorar el cosmos. Proyecto promovido por
+                    <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</a> C. de Villablanca, 79,
+                    Vicálvaro, 28032 Madrid teléfono 917752214</span
+                ><br />
+                <span
+                    >Web realizada por <a href="mailto:pdcb02@educa.madrid.org">Piero Dstefano Cisneros Bravo</a>,
+                    <a href="mailto:zhejiang.qiu@educa.madrid.org">Zheng Xia Qiu Pan</a> y
+                    <a href="mailto:rpc_155@educa.madrid.org">Rubén Pérez Cantal</a></span
+                >
+            </div>
         </footer>
     </body>
 </html>

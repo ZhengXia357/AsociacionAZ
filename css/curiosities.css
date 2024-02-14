@@ -1,26 +1,21 @@
 section {
   display: grid;
-  grid-template-columns: auto 70% auto;
+  grid-template-columns: auto 72% auto;
+  grid-gap: 15px;
 }
 
 section article {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
   grid-column: 2;
   background-color: #001f3f;
   color: #fff;
   text-align: center;
   border-radius: 20px;
-  margin: 2%;
+  margin: 9px;
 }
 
-section {
-  display: grid;
-  grid-template-columns: auto 72% auto;
-  grid-gap: 15px;
-}
-
-article {
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
+article * {
   grid-column: 2;
 }
 
@@ -29,7 +24,7 @@ article div {
 }
 
 article p {
-  margin: 0px 20px;
+  margin: 0px 20px 15px 20px;
 }
 
 article div:first-child {
@@ -45,10 +40,6 @@ article div:last-child {
   background-size: cover;
   border-radius: 0px 20px 20px 0px;
   padding: initial;
-}
-
-article * {
-  grid-column: 2;
 }
 
 section div.fondo {

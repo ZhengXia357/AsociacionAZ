@@ -1,163 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="text/css" rel="stylesheet" href="../css/general.css" />
+        <link type="text/css" rel="stylesheet" href="../css/registrer.css" />
+        <script type="text/javascript" src="../js/registrer.js"></script>
+        <script type="text/javascript" src="../js/general.js"></script>
+        <title>Regístrate</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="text/css" rel="stylesheet" href="../css/general.css">
-  <link type="text/css" rel="stylesheet" href="../css/registrer.css">
-  <script type="text/javascript" src="../js/registrer.js"></script>
-  <script type="text/javascript" src="../js/general.js"></script>
-  <title>Regístrate</title>
-</head>
+    <body>
+        <header>
+            <nav>
+                <a href="./index.html"><img src="../img/logoSinFondo.png" alt="Logo de Stellar Us" title="STELLAR US" /></a>
+                <ul>
+                    <li>
+                        <a href="./destinations.html">Destinos</a>
+                    </li>
+                    <li class="activo"><span>Registrarse</span></li>
+                    <li>
+                        <a href="./experiencies.html">Experiencias</a>
+                    </li>
+                    <li>
+                        <a href="./news.html">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="./activities.html">Actividades</a>
+                    </li>
+                    <li>
+                        <a href="./curiosities.html">Curiosidades</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contacta</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">Conócenos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-    <header>
-        <nav>
-            <a href="./index.html"
-              ><img
-                src="../img/logoSinFondo.png"
-                alt="Logo de Stellar Us"
-                title="STELLAR US"
-            /></a>
-            <ul>
-              <li>
-                <a href="./destinations.html">Destinos</a>
-              </li>
-              <li class="activo"><span>Registrarse</span></li>
-              <li>
-                <a href="./experiencies.html">Experiencias</a>
-              </li>
-              <li>
-                <a href="./news.html">Noticias</a>
-              </li>
-              <li>
-                <a href="./activities.html">Actividades</a>
-              </li>
-              <li>
-                <a href="./curiosities.html">Curiosidades</a>
-              </li>
-              <li>
-                <a href="./contact.html">Contacta</a>
-              </li>
-              <li>
-                <a href="./about.html">Conócenos</a>
-              </li>
-            </ul>
-          </nav>
-    </header>
+        <main class="mainRegistro">
+            <section class="section Izquierda">
+                <h1 class="h1Registro">EXPLORA EL UNIVERSO CON STELLAR US</h1>
+                <p class="parrafoRegistro">
+                    Regístrate ahora para explorar nuevos horizontes, descubrir mundos desconocidos y vivir experiencias que desafían los límites de
+                    lo imaginable. El viaje de tus sueños está a solo un clic de distancia. ¡Hazte miembro hoy y prepárate para alcanzar las
+                    estrellas!"
+                </p>
+            </section>
+            <section class="section Derecha">
+                <form class="formularioRegistro">
+                    <div class="cajaNombreForm">
+                        <label class="labelNombreApellido">Nombre y Apellido</label>
+                        <input type="text" class="input nombre" placeholder="  Nombre Completo" />
+                        <input type="text" class="input apellido" placeholder="  Apellido" />
+                    </div>
 
-    <main class="mainRegistro">
-  
-      <section class="section Izquierda">
-        <h1 class="h1Registro">EXPLORA EL UNIVERSO CON STELLAR US</h1>
-        <p class="parrafoRegistro">Regístrate ahora para explorar nuevos horizontes, descubrir mundos desconocidos y vivir experiencias que desafían los límites de lo imaginable. El viaje de tus sueños está a solo un clic de distancia. ¡Hazte miembro hoy y prepárate para alcanzar las estrellas!"</p>
-      </section>
-      <section class="section Derecha">
+                    <div class="cajaIdentidadForm">
+                        <label class="labelIdentidad">DNI / NIE</label>
+                        <input type="text" class="input dni_nie" placeholder="  Documento" />
+                    </div>
+                    <div class="cajaEmail">
+                        <label class="labelEmail">Correo Electronico</label>
+                        <input type="email" class="input email" placeholder="  example@example.com" />
+                    </div>
 
-        <form class="formularioRegistro" >
+                    <div class="cajaCivil">
+                        <div class="cajaCivilHija">
+                            <label class="labelEstado">Estado Civil</label>
+                            <select class="opciones">
+                                <option selected>soltero</option>
+                                <option>casado</option>
+                                <option>divoriciado</option>
+                            </select>
+                        </div>
 
-          <div class="cajaNombreForm">
-            <label class="labelNombreApellido">Nombre y Apellido</label>
-            <input type="text" class="input nombre" placeholder="  Nombre Completo">
-            <input type="text" class="input apellido" placeholder="  Apellido">
-          </div>
+                        <div class="cajaCivilHija2">
+                            <label class="labelDiasDispo">Disponibilidad</label>
+                            <select class="diasOpc">
+                                <option selected>Lunes</option>
+                                <option>Martes</option>
+                                <option>Miercoles</option>
+                                <option>Jueves</option>
+                                <option>Viernes</option>
+                                <option>Sabado</option>
+                                <option>Domingo</option>
+                            </select>
+                        </div>
+                    </div>
 
-          <div class="cajaIdentidadForm">
-            <label class="labelIdentidad">DNI / NIE</label>
-            <input type="text" class="input dni_nie" placeholder="  Documento">
-          </div>
-          <div class="cajaEmail">
-            <label class="labelEmail">Correo Electronico</label>
-            <input type="email" class="input email" placeholder="  example@example.com">
-          </div>
+                    <div class="cajaTelefono">
+                        <label class="labelTelefono">Telefono</label>
+                        <input type="number" class="input number" />
+                    </div>
 
-          <div class="cajaCivil">
+                    <div class="cajaTextTarea">
+                        <label class="labelTextArea" for="comentario">Observaciones</label>
+                        <textarea name="comentario" class="textArea"></textarea>
+                    </div>
 
-            <div class="cajaCivilHija">
-               <label class="labelEstado">Estado Civil</label>
-            <select class="opciones">
-              <option selected>soltero</option>
-              <option>casado</option>
-              <option>divoriciado</option>
-            </select>
+                    <div class="cajaBotones">
+                        <input type="submit" class="botones" />
+                        <input type="reset" class="botones" />
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <a href="https://www.facebook.com/"
+                    ><img
+                        src="../img/rrss/facebook.png"
+                        onmouseout="this.src='../img/rrss/facebook.png';"
+                        onmouseover="this.src='../img/rrss/facebookBlanco.png'"
+                        alt="Facebook"
+                /></a>
+                <a href="https://twitter.com/?lang=es"
+                    ><img
+                        src="../img/rrss/gorjeo.png"
+                        onmouseout="this.src='../img/rrss/gorjeo.png';"
+                        onmouseover="this.src='../img/rrss/gorjeoBlanco.png'"
+                        alt="Twitter"
+                /></a>
+                <a href="https://www.instagram.com/?hl=es"
+                    ><img
+                        src="../img/rrss/instagram.png"
+                        onmouseout="this.src='../img/rrss/instagram.png';"
+                        onmouseover="this.src='../img/rrss/instagramBlanco.png'"
+                        alt="Instagram"
+                /></a>
+                <a href="mailto:info@stellarus.org"
+                    ><img
+                        src="../img/rrss/gmail.png"
+                        onmouseout="this.src='../img/rrss/gmail.png';"
+                        onmouseover="this.src='../img/rrss/gmailBlanco.png'"
+                        alt="Gmail"
+                /></a>
+                <a href="https://www.youtube.com/"
+                    ><img
+                        src="../img/rrss/youtube.png"
+                        onmouseout="this.src='../img/rrss/youtube.png';"
+                        onmouseover="this.src='../img/rrss/youtubeBlanco.png'"
+                        alt="Gmail"
+                        alt="YouTube"
+                /></a>
+                <a href="https://web.telegram.org/a/"
+                    ><img
+                        src="../img/rrss/telegrama.png"
+                        onmouseout="this.src='../img/rrss/telegrama.png';"
+                        onmouseover="this.src='../img/rrss/telegramaBlanco.png'"
+                        alt="Telegram"
+                /></a>
+                <a href="https://www.tiktok.com/es/"
+                    ><img
+                        src="../img/rrss/tik-tok.png"
+                        onmouseout="this.src='../img/rrss/tik-tok.png';"
+                        onmouseover="this.src='../img/rrss/tik-tokBlanco.png'"
+                        alt="TikTok"
+                /></a>
+                <a href="https://web.whatsapp.com/"
+                    ><img
+                        src="../img/rrss/whatsapp.png"
+                        onmouseout="this.src='../img/rrss/whatsapp.png';"
+                        onmouseover="this.src='../img/rrss/whatsappBlanco.png'"
+                        alt="WhatsApp"
+                /></a>
             </div>
-
-              <div class="cajaCivilHija2">
-                <label class="labelDiasDispo">Disponibilidad</label>
-                <select class="diasOpc">
-                  <option selected>Lunes</option>
-                  <option>Martes</option>
-                  <option>Miercoles</option>
-                  <option>Jueves</option>
-                  <option>Viernes</option>
-                  <option>Sabado</option>
-                  <option>Domingo</option>
-                </select>
-              </div>
-            
-          </div>
-          
-
-          <div class="cajaTelefono">
-            <label class="labelTelefono">Telefono</label>
-            <input type="number" class="input number">
-          </div>
-   
-          <div class="cajaTextTarea">
-            <label class="labelTextArea" for="comentario">Observaciones</label>
-            <textarea name="comentario" class="textArea" ></textarea>
-          </div>
-
-          <div class="cajaBotones">
-            <input type="submit" class="botones">
-            <input type="reset"  class="botones">
-          </div>
-        </form>
-
-
-      </section>
-    </main>
-    <footer>
-      <div>
-          <a href="https://www.facebook.com/"><img src="../img/rrss/facebook.png"
-                  onmouseout="this.src='../img/rrss/facebook.png';"
-                  onmouseover="this.src='../img/rrss/facebookBlanco.png'" alt="Facebook"></a>
-          <a href="https://twitter.com/?lang=es"><img src="../img/rrss/gorjeo.png"
-                  onmouseout="this.src='../img/rrss/gorjeo.png';"
-                  onmouseover="this.src='../img/rrss/gorjeoBlanco.png'" alt="Twitter"></a>
-          <a href="https://www.instagram.com/?hl=es"><img src="../img/rrss/instagram.png"
-                  onmouseout="this.src='../img/rrss/instagram.png';"
-                  onmouseover="this.src='../img/rrss/instagramBlanco.png'" alt="Instagram"></a>
-          <a href="mailto:info@stellarus.org"><img src="../img/rrss/gmail.png"
-                  onmouseout="this.src='../img/rrss/gmail.png';" onmouseover="this.src='../img/rrss/gmailBlanco.png'"
-                  alt="Gmail"></a>
-          <a href="https://www.youtube.com/"><img src="../img/rrss/youtube.png"
-                  onmouseout="this.src='../img/rrss/youtube.png';"
-                  onmouseover="this.src='../img/rrss/youtubeBlanco.png'" alt="Gmail" alt="YouTube"></a>
-          <a href="https://web.telegram.org/a/"><img src="../img/rrss/telegrama.png"
-                  onmouseout="this.src='../img/rrss/telegrama.png';"
-                  onmouseover="this.src='../img/rrss/telegramaBlanco.png'" alt="Telegram"></a>
-          <a href="https://www.tiktok.com/es/"><img src="../img/rrss/tik-tok.png"
-                  onmouseout="this.src='../img/rrss/tik-tok.png';"
-                  onmouseover="this.src='../img/rrss/tik-tokBlanco.png'" alt="TikTok"></a>
-          <a href="https://web.whatsapp.com/"><img src="../img/rrss/whatsapp.png"
-                  onmouseout="this.src='../img/rrss/whatsapp.png';"
-                  onmouseover="this.src='../img/rrss/whatsappBlanco.png'" alt="WhatsApp"></a>
-      </div>
-      <div>
-          <a href="../html/index.html">Página Principal</a><span> |</span>
-          <a href="">Política de privacidad</a><span> |</span>
-          <a href="">Cookies</a><span> |</span>
-          <a href="../html/contact.html">Contacta</a>
-      </div>
-      <div>
-          <span>Asociación dedicada a explorar el cosmos. Proyecto promovido por <a
-              href="https://site.educa.madrid.org/ies.villablanca.madrid/"  target="_blank">IES Villablanca</a>
-              C. de Villablanca, 79, Vicálvaro, 28032 Madrid teléfono 917752214</span></br>
-              <span>Web realizada por <a href="mailto:pdcb02@educa.madrid.org">Piero Dstefano Cisneros Bravo</a>, <a href="mailto:zhejiang.qiu@educa.madrid.org">Zheng Xia Qiu Pan</a> y <a href="mailto:rpc_155@educa.madrid.org">Rubén Pérez Cantal</a></span>
-      </div>
-  </footer>
-</body>
-
+            <div>
+                <a href="../html/index.html">Página Principal</a><span> |</span> <a href="">Política de privacidad</a><span> |</span>
+                <a href="">Cookies</a><span> |</span>
+                <a href="../html/contact.html">Contacta</a>
+            </div>
+            <div>
+                <span
+                    >Asociación dedicada a explorar el cosmos. Proyecto promovido por
+                    <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</a> C. de Villablanca, 79,
+                    Vicálvaro, 28032 Madrid teléfono 917752214</span
+                ><br />
+                <span
+                    >Web realizada por <a href="mailto:pdcb02@educa.madrid.org">Piero Dstefano Cisneros Bravo</a>,
+                    <a href="mailto:zhejiang.qiu@educa.madrid.org">Zheng Xia Qiu Pan</a> y
+                    <a href="mailto:rpc_155@educa.madrid.org">Rubén Pérez Cantal</a></span
+                >
+            </div>
+        </footer>
+    </body>
 </html>
