@@ -1,97 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="text/css" rel="stylesheet" href="../css/general.css" />
+        <link type="text/css" rel="stylesheet" href="../css/curiosities.css" />
+        <script type="text/javascript" src="../js/curiosities.js"></script>
+        <script type="text/javascript" src="../js/general.js"></script>
+        <title>Si eres curioso...</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="../css/general.css" />
-    <link type="text/css" rel="stylesheet" href="../css/curiosities.css" />
-    <script type="text/javascript" src="../js/curiosities.js"></script>
-    <script type="text/javascript" src="../js/general.js"></script>
-    <title>Si eres curioso...</title>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <a href="./index.html"><img src="../img/logoSinFondo.png" alt="Logo de Stellar Us" title="STELLAR US" /></a>
-            <ul>
-                <li>
-                    <a href="./destinations.html">Destinos</a>
-                </li>
-                <li>
-                    <a href="./register.html">Registrarse</a>
-                </li>
-                <li>
-                    <a href="./experiencies.html">Experiencias</a>
-                </li>
-                <li>
-                    <a href="./news.html">Noticias</a>
-                </li>
-                <li>
-                    <a href="./activities.html">Actividades</a>
-                </li>
-                <li class="activo"><span>Curiosidades</span></li>
-                <li>
-                    <a href="./contact.html">Contacta</a>
-                </li>
-                <li>
-                    <a href="./about.html">Conócenos</a>
-                </li>
-            </ul>
-        </nav>
-        <h1>CURIOSIDADES</h1>
-    </header>
-    <main>
-        <section>
-            <article>
-                <div class="fondo"></div>
-                <h2>Calculadora de Tiempo de Viaje: Descubre tu viaje</h2>
-                <p>¿Te preguntas cuánto tiempo tardarías en llegar a planetas lejanos? Ingresa la velocidad de tu nave y
-                    selecciona tu destino. Te sorprenderás con las estimaciones de tiempo detalladas, ¡perfectas para
-                    planificar tus próximas aventuras estelares!</p>
-                <div class="fondo"></div>
-            </article>
-        </section>
-        <section>
-            <article>
-                <div class="fondo"></div>
-                <h2>Calculadora de Peso en Otros Planetas: Tu peso, tu mundo</h2>
-                <p>¿Alguna vez imaginaste cómo sería pesar en Marte o la Luna? Ingresa tu peso en la Tierra y elige tu
-                    destino celestial. ¡Descubre tu peso intergaláctico y diviértete compartiendo estos datos curiosos
-                    con amigos y familiares!</p>
-                <div class="fondo"></div>
-            </article>
-        </section>
-        <section>
-            <article>
-                <div class="fondo"></div>
-                <h2>Datos Curiosos del Espacio: Explora el cosmos</h2>
-                <p>Sumérgete en tarjetas informativas llenas de curiosidades fascinantes. Desde tormentas en Júpiter
-                    hasta agujeros negros misteriosos, nuestro rincón cósmico te invita a descubrir los secretos más
-                    intrigantes del espacio.</p>
-                <div class="fondo"></div>
-            </article>
-        </section>
-        <section>
-            <article>
-                <div class="fondo"></div>
-                <h2>Interactividad Educativa: Desafía tu conocimiento</h2>
-                <p>¿Te consideras un experto del espacio? Participa en nuestros cuestionarios y juegos educativos para
-                    poner a prueba tus conocimientos. ¡Aprender sobre el universo nunca fue tan divertido!</p>
-                <div class="fondo"></div>
-            </article>
-        </section>
-    </main>
-    <aside></aside>
-    <footer>
-        <p>Propiedad de Stellar Us.&copy;</p></br>
-        <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</a></br>
-        <a href="mailto:pdcb02@educa.madrid.org">Contacta con Piero Dstefano Cisneros Bravo</a></br>
-        <a href="mailto:zhejiang.qiu@educa.madrid.org">Contacta con Zheng Xia Qiu Pan</a></br>
-        <a href="mailto:rpc_155@educa.madrid.org">Contacta con Rubén Pérez Cantal</a></br>
-        <a href="../html/contact.html">Contacta con el equipo de Stellar Us</a>
-    </footer>
-</body>
-
+    <body>
+        <header>
+            <nav>
+                <a href="./index.html"><img src="../img/logoSinFondo.png" alt="Logo de Stellar Us" title="STELLAR US" /></a>
+                <ul>
+                    <li>
+                        <a href="./destinations.html">Destinos</a>
+                    </li>
+                    <li>
+                        <a href="./register.html">Registrarse</a>
+                    </li>
+                    <li>
+                        <a href="./experiencies.html">Experiencias</a>
+                    </li>
+                    <li>
+                        <a href="./news.html">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="./activities.html">Actividades</a>
+                    </li>
+                    <li class="activo"><span>Curiosidades</span></li>
+                    <li>
+                        <a href="./contact.html">Contacta</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">Conócenos</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>CURIOSIDADES</h1>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <div class="fondo"></div>
+                    <div>
+                        <h2>Calculadora de Tiempo de Viaje: Descubre tu viaje</h2>
+                        <p>
+                            ¿Te preguntas cuánto tiempo tardarías en llegar a planetas lejanos? Ingresa la velocidad de tu nave y selecciona tu
+                            destino. Te sorprenderás con las estimaciones de tiempo detalladas, ¡perfectas para planificar tus próximas aventuras
+                            estelares!
+                        </p>
+                        <form id="calculadora">
+                            <label for="destino">¿A dónde tienes pensado ir?</label>
+                            <select name="destino" id="destino">
+                                <option value="planetaAurora">Planeta Aurora</option>
+                                <option value="nebulosaCelestial">Nebulosa Celestial</option>
+                                <option value="galaxiaEspejismo">Galaxia Espejismo</option>
+                                <option value="lunaEspectral">Luna Espectral</option>
+                                <option value="otro" selected>Otro</option>
+                            </select>
+                            <br />
+                            <label for="distancia">Distancia a recorrer en años luz:</label>
+                            <input type="number" id="distancia" />
+                            <br />
+                            <label for="velocidad">Velocidad en porcentaje de la velocidad de la luz:</label>
+                            <input type="number" id="velocidad" max="100" value="50" />
+                            <br />
+                            <input type="button" value="Calcular" onclick="calcularTiempoDeViaje()" />
+                            <br />
+                        </form>
+                        <span id="resultado"></span>
+                    </div>
+                    <div class="fondo"></div>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <div class="fondo"></div>
+                    <div>
+                        <h2>Calculadora de Peso en Otros Planetas: Tu peso, tu mundo</h2>
+                        <p>
+                            ¿Alguna vez imaginaste cómo sería pesar en Marte o la Luna? Ingresa tu peso en la Tierra y elige tu destino celestial.
+                            ¡Descubre tu peso intergaláctico y diviértete compartiendo estos datos curiosos con amigos y familiares!
+                        </p>
+                    </div>
+                    <div class="fondo"></div>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <div class="fondo"></div>
+                    <div>
+                        <h2>Datos Curiosos del Espacio: Explora el cosmos</h2>
+                        <p>
+                            Sumérgete en tarjetas informativas llenas de curiosidades fascinantes. Desde tormentas en Júpiter hasta agujeros negros
+                            misteriosos, nuestro rincón cósmico te invita a descubrir los secretos más intrigantes del espacio.
+                        </p>
+                    </div>
+                    <div class="fondo"></div>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <div class="fondo"></div>
+                    <div>
+                        <h2>Interactividad Educativa: Desafía tu conocimiento</h2>
+                        <p>
+                            ¿Te consideras un experto del espacio? Participa en nuestros cuestionarios y juegos educativos para poner a prueba tus
+                            conocimientos. ¡Aprender sobre el universo nunca fue tan divertido!
+                        </p>
+                    </div>
+                    <div class="fondo"></div>
+                </article>
+            </section>
+        </main>
+        <aside></aside>
+        <footer>
+            <p>Propiedad de Stellar Us.&copy;</p>
+            <br />
+            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</a><br />
+            <a href="mailto:pdcb02@educa.madrid.org">Contacta con Piero Dstefano Cisneros Bravo</a><br />
+            <a href="mailto:zhejiang.qiu@educa.madrid.org">Contacta con Zheng Xia Qiu Pan</a><br />
+            <a href="mailto:rpc_155@educa.madrid.org">Contacta con Rubén Pérez Cantal</a><br />
+            <a href="../html/contact.html">Contacta con el equipo de Stellar Us</a>
+        </footer>
+    </body>
 </html>
