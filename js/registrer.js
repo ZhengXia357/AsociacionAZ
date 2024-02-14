@@ -38,3 +38,21 @@ function validarInput(){
     
 
 }
+/** 
+var imagen = document.getElementById('imagen')
+var x =0;
+var y =0;
+function moverImagen(){
+    x +=1;
+    y +=1;
+    imagen.style.left = x+ "px";
+    imagen.style.top = y+ "px"
+}
+document.addEventListener("mousemove",function(event){
+    var x = event.clientX;
+    var y = event.clientY;
+    imagen.style.left=x+"px"
+    imagen.style.top=y+"px"
+
+
+})** /

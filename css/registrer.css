@@ -20,15 +20,22 @@ body{
 
 .Izquierda{
     grid-column: 1/2;
-    background-color: rgb(209, 190, 166);
+    background-color: rgb(211, 213, 236);
     justify-self: end;
     align-self:center ;
     width: 700px;
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
-    justify-items: center;
     border-radius: 20px 0 0 20px;
+    background-image: url(../img/fondoRegistro.png);
+    background-repeat: no-repeat;
+    background-size: cover  ;
     
+}
+.imagenJuego{
+    width: 150px;
+    height: 190px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 label{
     color: azure;
