@@ -1,243 +1,272 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link type="text/css" rel="stylesheet" href="../css/general.css" />
-        <link type="text/css" rel="stylesheet" href="../css/curiosities.css" />
-        <script type="text/javascript" src="../js/curiosities.js"></script>
-        <script type="text/javascript" src="../js/general.js"></script>
-        <title>Si eres curioso...</title>
-    </head>
 
-    <body>
-        <header>
-            <nav>
-                <a href="./index.html"><img src="../img/logoSinFondo.png" alt="Logo de Stellar Us" title="STELLAR US" /></a>
-                <ul>
-                    <li>
-                        <a href="./destinations.html">Destinos</a>
-                    </li>
-                    <li>
-                        <a href="./register.html">Registrarse</a>
-                    </li>
-                    <li>
-                        <a href="./experiencies.html">Experiencias</a>
-                    </li>
-                    <li>
-                        <a href="./news.html">Noticias</a>
-                    </li>
-                    <li>
-                        <a href="./activities.html">Actividades</a>
-                    </li>
-                    <li class="activo"><span>Curiosidades</span></li>
-                    <li>
-                        <a href="./contact.html">Contacta</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">Conócenos</a>
-                    </li>
-                </ul>
-            </nav>
-            <h1>CURIOSIDADES</h1>
-        </header>
-        <main>
-            <section>
-                <article>
-                    <div class="fondo"></div>
-                    <div>
-                        <h2>Calculadora de Tiempo de Viaje: Descubre tu viaje</h2>
-                        <p>
-                            ¿Te preguntas cuánto tiempo tardarías en llegar a planetas lejanos? Ingresa la velocidad de tu nave y selecciona tu
-                            destino. Te sorprenderás con las estimaciones de tiempo detalladas, ¡perfectas para planificar tus próximas aventuras
-                            estelares!
-                        </p>
-                        <form id="calculadoraPeso">
-                            <label for="destino">¿A dónde tienes pensado ir?</label>
-                            <select name="destino" id="destino">
-                                <option value="planetaAurora">Planeta Aurora</option>
-                                <option value="nebulosaCelestial">Nebulosa Celestial</option>
-                                <option value="galaxiaEspejismo">Galaxia Espejismo</option>
-                                <option value="lunaEspectral">Luna Espectral</option>
-                                <option value="otro" selected>Otro</option>
-                            </select>
-                            <br />
-                            <label for="distancia">Distancia a recorrer en años luz:</label>
-                            <input type="number" id="distancia" />
-                            <br />
-                            <label for="velocidad">Velocidad en porcentaje de la velocidad de la luz:</label>
-                            <input type="number" id="velocidad" max="100" value="50" />
-                            <br />
-                            <input type="button" value="Calcular" onclick="calcularTiempoDeViaje()" />
-                            <br />
-                        </form>
-                        <span id="resultado"></span>
-                    </div>
-                    <div class="fondo"></div>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <div class="fondo"></div>
-                    <div>
-                        <h2>Calculadora de peso en otros planetas: tu peso, tu mundo</h2>
-                        <p>
-                            ¿Alguna vez imaginaste cómo sería pesar en Marte o la Luna? Ingresa tu peso en la Tierra y elige tu destino celestial.
-                            ¡Descubre tu peso intergaláctico y diviértete compartiendo estos datos curiosos con amigos y familiares!
-                        </p>
-                    </div>
-                    <div class="fondo"></div>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <div class="fondo"></div>
-                    <div>
-                        <h2>Datos curiosos del espacio: explora el cosmos</h2>
-                        <p>
-                            Sumérgete en tarjetas informativas llenas de curiosidades fascinantes. Desde tormentas en Júpiter hasta agujeros negros
-                            misteriosos, nuestro rincón cósmico te invita a descubrir los secretos más intrigantes del espacio.
-                        </p>
-                        <button onclick="mostrarDatoCurioso()">¡Dato curioso!</button>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="../css/general.css" />
+    <link type="text/css" rel="stylesheet" href="../css/curiosities.css" />
+    <script type="text/javascript" src="../js/curiosities.js"></script>
+    <script type="text/javascript" src="../js/general.js"></script>
+    <title>Si eres curioso...</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><img src="../img/logoSinFondo.png" alt="Logo de Stellar Us" title="STELLAR US" /></a>
+            <ul>
+                <li>
+                    <a href="./destinations.html">Destinos</a>
+                </li>
+                <li>
+                    <a href="./register.html">Registrarse</a>
+                </li>
+                <li>
+                    <a href="./experiencies.html">Experiencias</a>
+                </li>
+                <li>
+                    <a href="./news.html">Noticias</a>
+                </li>
+                <li>
+                    <a href="./activities.html">Actividades</a>
+                </li>
+                <li class="activo"><span>Curiosidades</span></li>
+                <li>
+                    <a href="./contact.html">Contacta</a>
+                </li>
+                <li>
+                    <a href="./about.html">Conócenos</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>CURIOSIDADES</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div class="fondo"></div>
+                <div>
+                    <h2>Calculadora de Tiempo de Viaje: Descubre tu viaje</h2>
+                    <p>
+                        ¿Te preguntas cuánto tiempo tardarías en llegar a planetas lejanos? Ingresa la velocidad de tu
+                        nave y selecciona tu
+                        destino. Te sorprenderás con las estimaciones de tiempo detalladas, ¡perfectas para planificar
+                        tus próximas aventuras
+                        estelares!
+                    </p>
+                    <form id="calculadoraTiempo">
+                        <label for="destino">¿A dónde tienes pensado ir?</label>
+                        <select name="destino" id="destino">
+                            <option value="planetaAurora">Planeta Aurora</option>
+                            <option value="nebulosaCelestial">Nebulosa Celestial</option>
+                            <option value="galaxiaEspejismo">Galaxia Espejismo</option>
+                            <option value="lunaEspectral">Luna Espectral</option>
+                            <option value="otro" selected>Otro</option>
+                        </select>
                         <br />
-                        <span id="datoCurioso"></span>
+                        <label for="distancia">Distancia a recorrer en años luz:</label>
+                        <input type="number" id="distancia" />
+                        <br />
+                        <label for="velocidad">Velocidad en porcentaje de la velocidad de la luz:</label>
+                        <input type="number" id="velocidad" max="100" value="50" />
+                        <br />
+                        <input type="button" value="Calcular" onclick="calcularTiempoDeViaje()" />
+                        <br />
+                    </form>
+                    <span id="resultado"></span>
+                </div>
+                <div class="fondo"></div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <div class="fondo"></div>
+                <div>
+                    <h2>Calculadora de peso en otros planetas: tu peso, tu mundo</h2>
+                    <p>
+                        ¿Alguna vez imaginaste cómo sería pesar en Marte o la Luna? Ingresa tu peso en la Tierra y elige
+                        tu destino celestial.
+                        ¡Descubre tu peso intergaláctico y diviértete compartiendo estos datos curiosos con amigos y
+                        familiares!
+                    </p>
+                    <form id="calculadoraPeso">
+                        <label for="pesoTierra">Ingresa tu peso en la Tierra (en kilogramos):</label>
+                        <input type="number" id="pesoTierra" required>
+                        <br>
+                        <label for="planetas">Elige tu destino celestial:</label>
+                        <select id="planetas">
+                            <option value="mercurio">Mercurio</option>
+                            <option value="venus">Venus</option>
+                            <option value="marte">Marte</option>
+                            <option value="jupiter">Júpiter</option>
+                            <option value="saturno">Saturno</option>
+                            <option value="urano">Urano</option>
+                            <option value="neptuno">Neptuno</option>
+                            <option value="pluton">Plutón</option>
+                            <option value="otro" selected>Otro</option>
+                        </select>
+                        <br>
+                        
+                        <button onclick="calcularPeso()">Calcular Peso</button>
+                    </form>
+                    <div id="resultado"></div>
+                </div>
+                <div class="fondo"></div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <div class="fondo"></div>
+                <div>
+                    <h2>Datos curiosos del espacio: explora el cosmos</h2>
+                    <p>
+                        Sumérgete en tarjetas informativas llenas de curiosidades fascinantes. Desde tormentas en
+                        Júpiter hasta agujeros negros
+                        misteriosos, nuestro rincón cósmico te invita a descubrir los secretos más intrigantes del
+                        espacio.
+                    </p>
+                    <button onclick="mostrarDatoCurioso()">¡Dato curioso!</button>
+                    <br />
+                    <span id="datoCurioso"></span>
+                </div>
+                <div class="fondo"></div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <div class="fondo"></div>
+                <div>
+                    <h2>Interactividad educativa: desafía tu conocimiento</h2>
+                    <p>
+                        ¿Te consideras un experto del espacio? Participa en nuestros cuestionarios y juegos educativos
+                        para poner a prueba tus
+                        conocimientos. ¡Aprender sobre el universo nunca fue tan divertido!
+                    </p>
+                    <div id="pregunta1" class="pregunta">
+                        <p>Pregunta 1: ¿Cuál es el planeta más grande del sistema solar?</p>
+                        <input type="radio" name="respuesta1" id="respuesta11" value="1" />
+                        <label for="respuesta11">Mercurio</label>
+                        <br>
+                        <input type="radio" name="respuesta1" id="respuesta12" value="2" />
+                        <label for="respuesta12">Júpiter</label>
+                        <br>
+                        <input type="radio" name="respuesta1" id="respuesta13" value="3" />
+                        <label for="respuesta13">Venus</label>
+                        <br>
+                        <button onclick="verificarRespuesta(1)">Siguiente</button>
                     </div>
-                    <div class="fondo"></div>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <div class="fondo"></div>
-                    <div>
-                        <h2>Interactividad educativa: desafía tu conocimiento</h2>
-                        <p>
-                            ¿Te consideras un experto del espacio? Participa en nuestros cuestionarios y juegos educativos para poner a prueba tus
-                            conocimientos. ¡Aprender sobre el universo nunca fue tan divertido!
-                        </p>
-                        <div id="pregunta1" class="pregunta">
-                            <p>Pregunta 1: ¿Cuál es el planeta más grande del sistema solar?</p>
-                            <input type="radio" name="respuesta1" value="Mercurio" /> Mercurio
-                            <input type="radio" name="respuesta1" value="Jupiter" /> Júpiter
-                            <input type="radio" name="respuesta1" value="Venus" /> Venus
-                            <button onclick="verificarRespuesta(1)">Siguiente</button>
-                        </div>
-                        <div id="pregunta2" class="pregunta" hidden>
-                            <p>Pregunta 2: ¿Cuántas lunas tiene Marte?</p>
-                            <input type="radio" name="respuesta2" value="0" /> 0 <input type="radio" name="respuesta2" value="2" /> 2
-                            <input type="radio" name="respuesta2" value="1" /> 1
-                            <button onclick="verificarRespuesta(2)">Siguiente</button>
-                        </div>
-                        <div id="resultado" class="pregunta" hidden>
-                            <h2>¡Fin del cuestionario!</h2>
-                            <p>Tu puntuación es <span id="puntuacion"></span> de 2.</p>
-                        </div>
-                        <div id="pregunta3" class="pregunta" hidden>
-                            <p>Pregunta 3: ¿Cuál es la distancia promedio entre la Tierra y el Sol?</p>
-                            <input type="radio" name="respuesta3" value="93 millones de millas" /> 93 millones de millas
-                            <input type="radio" name="respuesta3" value="150 millones de kilómetros" /> 150 millones de kilómetros
-                            <input type="radio" name="respuesta3" value="30 años luz" /> 30 años luz
-                            <button onclick="verificarRespuesta(3)">Siguiente</button>
-                        </div>
 
-                        <div id="pregunta4" class="pregunta" hidden>
-                            <p>Pregunta 4: ¿Cuál es la galaxia más cercana a la Vía Láctea?</p>
-                            <input type="radio" name="respuesta4" value="Andrómeda" /> Andrómeda
-                            <input type="radio" name="respuesta4" value="Triángulo" /> Triángulo
-                            <input type="radio" name="respuesta4" value="Centaurus A" /> Centaurus A
-                            <button onclick="verificarRespuesta(4)">Siguiente</button>
-                        </div>
-
-                        <div id="pregunta5" class="pregunta" hidden>
-                            <p>Pregunta 5: ¿Qué es un agujero negro?</p>
-                            <input type="radio" name="respuesta5" value="Una estrella muy caliente" /> Una estrella muy caliente
-                            <input type="radio" name="respuesta5" value="Una región del espacio sin gravedad" /> Una región del espacio sin gravedad
-                            <input type="radio" name="respuesta5" value="Una concentración masiva de masa en un espacio pequeño" /> Una concentración
-                            masiva de masa en un espacio pequeño
-                            <button onclick="verificarRespuesta(5)">Siguiente</button>
-                        </div>
+                    <div id="pregunta2" class="pregunta" hidden>
+                        <p>Pregunta 2: ¿Cuántas lunas tiene Marte?</p>
+                        <input type="radio" name="respuesta2" id="respuesta21" value="1" />
+                        <label for="respuesta21">0</label>
+                        <br>
+                        <input type="radio" name="respuesta2" id="respuesta22" value="2" />
+                        <label for="respuesta22">2</label>
+                        <br>
+                        <input type="radio" name="respuesta2" id="respuesta23" value="3" />
+                        <label for="respuesta23">1</label>
+                        <br>
+                        <button onclick="verificarRespuesta(2)">Siguiente</button>
                     </div>
-                    <div class="fondo"></div>
-                </article>
-            </section>
-        </main>
-        <aside></aside>
-        <footer>
-            <div>
-                <a href="https://www.facebook.com/"
-                    ><img
-                        src="../img/rrss/facebook.png"
-                        onmouseout="this.src='../img/rrss/facebook.png';"
-                        onmouseover="this.src='../img/rrss/facebookBlanco.png'"
-                        alt="Facebook"
-                /></a>
-                <a href="https://twitter.com/?lang=es"
-                    ><img
-                        src="../img/rrss/gorjeo.png"
-                        onmouseout="this.src='../img/rrss/gorjeo.png';"
-                        onmouseover="this.src='../img/rrss/gorjeoBlanco.png'"
-                        alt="Twitter"
-                /></a>
-                <a href="https://www.instagram.com/?hl=es"
-                    ><img
-                        src="../img/rrss/instagram.png"
-                        onmouseout="this.src='../img/rrss/instagram.png';"
-                        onmouseover="this.src='../img/rrss/instagramBlanco.png'"
-                        alt="Instagram"
-                /></a>
-                <a href="mailto:info@stellarus.org"
-                    ><img
-                        src="../img/rrss/gmail.png"
-                        onmouseout="this.src='../img/rrss/gmail.png';"
-                        onmouseover="this.src='../img/rrss/gmailBlanco.png'"
-                        alt="Gmail"
-                /></a>
-                <a href="https://www.youtube.com/"
-                    ><img
-                        src="../img/rrss/youtube.png"
-                        onmouseout="this.src='../img/rrss/youtube.png';"
-                        onmouseover="this.src='../img/rrss/youtubeBlanco.png'"
-                        alt="Gmail"
-                        alt="YouTube"
-                /></a>
-                <a href="https://web.telegram.org/a/"
-                    ><img
-                        src="../img/rrss/telegrama.png"
-                        onmouseout="this.src='../img/rrss/telegrama.png';"
-                        onmouseover="this.src='../img/rrss/telegramaBlanco.png'"
-                        alt="Telegram"
-                /></a>
-                <a href="https://www.tiktok.com/es/"
-                    ><img
-                        src="../img/rrss/tik-tok.png"
-                        onmouseout="this.src='../img/rrss/tik-tok.png';"
-                        onmouseover="this.src='../img/rrss/tik-tokBlanco.png'"
-                        alt="TikTok"
-                /></a>
-                <a href="https://web.whatsapp.com/"
-                    ><img
-                        src="../img/rrss/whatsapp.png"
-                        onmouseout="this.src='../img/rrss/whatsapp.png';"
-                        onmouseover="this.src='../img/rrss/whatsappBlanco.png'"
-                        alt="WhatsApp"
-                /></a>
-            </div>
-            <div>
-                <a href="../html/index.html">Página Principal</a><span> |</span> <a href="">Política de privacidad</a><span> |</span>
-                <a href="">Cookies</a><span> |</span>
-                <a href="../html/contact.html">Contacta</a>
-            </div>
-            <div>
-                <span
-                    >Asociación dedicada a explorar el cosmos. Proyecto promovido por
-                    <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</a> C. de Villablanca, 79,
-                    Vicálvaro, 28032 Madrid teléfono 917752214</span
-                ><br />
-                <span
-                    >Web realizada por <a href="mailto:pdcb02@educa.madrid.org">Piero Dstefano Cisneros Bravo</a>,
-                    <a href="mailto:zhejiang.qiu@educa.madrid.org">Zheng Xia Qiu Pan</a> y
-                    <a href="mailto:rpc_155@educa.madrid.org">Rubén Pérez Cantal</a></span
-                >
-            </div>
-        </footer>
-    </body>
+
+                    <div id="pregunta3" class="pregunta" hidden>
+                        <p>Pregunta 3: ¿Cuál es la distancia promedio entre la Tierra y el Sol?</p>
+                        <input type="radio" name="respuesta3" id="respuesta31" value="1" />
+                        <label for="respuesta31">93 millones de millas</label>
+                        <br>
+                        <input type="radio" name="respuesta3" id="respuesta32" value="2" />
+                        <label for="respuesta32">150 millones de kilómetros</label>
+                        <br>
+                        <input type="radio" name="respuesta3" id="respuesta33" value="3" />
+                        <label for="respuesta33">30 años luz</label>
+                        <br>
+                        <button onclick="verificarRespuesta(3)">Siguiente</button>
+                    </div>
+
+                    <div id="pregunta4" class="pregunta" hidden>
+                        <p>Pregunta 4: ¿Cuál es la galaxia más cercana a la Vía Láctea?</p>
+                        <input type="radio" name="respuesta4" id="respuesta41" value="1" />
+                        <label for="respuesta41">Andrómeda</label>
+                        <br>
+                        <input type="radio" name="respuesta4" id="respuesta42" value="2" />
+                        <label for="respuesta42">Triángulo</label>
+                        <br>
+                        <input type="radio" name="respuesta4" id="respuesta43" value="3" />
+                        <label for="respuesta43">Centaurus A</label>
+                        <br>
+                        <button onclick="verificarRespuesta(4)">Siguiente</button>
+                    </div>
+
+                    <div id="pregunta5" class="pregunta" hidden>
+                        <p>Pregunta 5: ¿Qué es un agujero negro?</p>
+                        <input type="radio" name="respuesta5" id="respuesta51" value="1" />
+                        <label for="respuesta51">Una estrella muy caliente</label>
+                        <br>
+                        <input type="radio" name="respuesta5" id="respuesta52" value="2" />
+                        <label for="respuesta52">Una región del espacio sin gravedad</label>
+                        <br>
+                        <input type="radio" name="respuesta5" id="respuesta53" value="3" />
+                        <label for="respuesta53">Una concentración masiva de masa en un espacio pequeño</label>
+                        <br>
+                        <button onclick="verificarRespuesta(5)">Siguiente</button>
+                    </div>
+
+                    <div id="resultadoQuiz" class="pregunta" hidden>
+                        <h2>¡Fin del cuestionario!</h2>
+                        <p>Tu puntuación es <span id="puntuacion"></span> de 5.</p>
+                        <button id="reintentar" onclick="location.reload()">Reintentar</button>
+                    </div>
+                </div>
+                <div class="fondo"></div>
+            </article>
+        </section>
+    </main>
+    <aside></aside>
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/"><img src="../img/rrss/facebook.png"
+                    onmouseout="this.src='../img/rrss/facebook.png';"
+                    onmouseover="this.src='../img/rrss/facebookBlanco.png'" alt="Facebook" /></a>
+            <a href="https://twitter.com/?lang=es"><img src="../img/rrss/gorjeo.png"
+                    onmouseout="this.src='../img/rrss/gorjeo.png';"
+                    onmouseover="this.src='../img/rrss/gorjeoBlanco.png'" alt="Twitter" /></a>
+            <a href="https://www.instagram.com/?hl=es"><img src="../img/rrss/instagram.png"
+                    onmouseout="this.src='../img/rrss/instagram.png';"
+                    onmouseover="this.src='../img/rrss/instagramBlanco.png'" alt="Instagram" /></a>
+            <a href="mailto:info@stellarus.org"><img src="../img/rrss/gmail.png"
+                    onmouseout="this.src='../img/rrss/gmail.png';" onmouseover="this.src='../img/rrss/gmailBlanco.png'"
+                    alt="Gmail" /></a>
+            <a href="https://www.youtube.com/"><img src="../img/rrss/youtube.png"
+                    onmouseout="this.src='../img/rrss/youtube.png';"
+                    onmouseover="this.src='../img/rrss/youtubeBlanco.png'" alt="Gmail" alt="YouTube" /></a>
+            <a href="https://web.telegram.org/a/"><img src="../img/rrss/telegrama.png"
+                    onmouseout="this.src='../img/rrss/telegrama.png';"
+                    onmouseover="this.src='../img/rrss/telegramaBlanco.png'" alt="Telegram" /></a>
+            <a href="https://www.tiktok.com/es/"><img src="../img/rrss/tik-tok.png"
+                    onmouseout="this.src='../img/rrss/tik-tok.png';"
+                    onmouseover="this.src='../img/rrss/tik-tokBlanco.png'" alt="TikTok" /></a>
+            <a href="https://web.whatsapp.com/"><img src="../img/rrss/whatsapp.png"
+                    onmouseout="this.src='../img/rrss/whatsapp.png';"
+                    onmouseover="this.src='../img/rrss/whatsappBlanco.png'" alt="WhatsApp" /></a>
+        </div>
+        <div>
+            <a href="../html/index.html">Página Principal</a><span> |</span> <a href="">Política de privacidad</a><span>
+                |</span>
+            <a href="">Cookies</a><span> |</span>
+            <a href="../html/contact.html">Contacta</a>
+        </div>
+        <div>
+            <span>Asociación dedicada a explorar el cosmos. Proyecto promovido por
+                <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</a> C.
+                de Villablanca, 79,
+                Vicálvaro, 28032 Madrid teléfono 917752214</span><br />
+            <span>Web realizada por <a href="mailto:pdcb02@educa.madrid.org">Piero Dstefano Cisneros Bravo</a>,
+                <a href="mailto:zhejiang.qiu@educa.madrid.org">Zheng Xia Qiu Pan</a> y
+                <a href="mailto:rpc_155@educa.madrid.org">Rubén Pérez Cantal</a></span>
+        </div>
+    </footer>
+</body>
+
 </html>

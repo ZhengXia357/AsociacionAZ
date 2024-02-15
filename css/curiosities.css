@@ -19,7 +19,7 @@ article * {
   grid-column: 2;
 }
 
-article div {
+article > div {
   padding-bottom: 20px;
 }
 
