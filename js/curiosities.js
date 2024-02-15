@@ -83,6 +83,7 @@ function calcularTiempoDeViaje() {
         var tiempo = distancia / velocidad;
         var mensaje = "El tiempo de viaje es de " + tiempo + " años.";
         document.getElementById("calculadoraTiempo").hidden = true;
+        document.getElementById("otroTiempo").hidden = false;
         if (tiempo == 0) {
             span.textContent = "¡Ya estás aquí!";
         } else if (tiempo < 0) {
@@ -102,6 +103,7 @@ function calcularPeso() {
       var pesoPlaneta = (pesoTierra * gravedad) / 9.81;
       span.textContent = "Tu peso será aproximadamente " + pesoPlaneta.toFixed(2) + " kg.";
       document.getElementById("calculadoraPeso").hidden = true;
+      document.getElementById("otroPeso").hidden = false;
     } else {
       alert('Por favor, ingresa un peso válido.');
     }

@@ -75,6 +75,8 @@
                         <br />
                     </form>
                     <span id="resultadoTiempo"></span>
+                    <br>
+                    <input type="button" value="Calcular otro" id="otroTiempo" onclick="location.reload()" hidden>
                 </div>
                 <div class="fondo"></div>
             </article>
@@ -85,7 +87,8 @@
                 <div>
                     <h2>Calculadora de peso en otros planetas: tu peso, tu mundo</h2>
                     <p>
-                        ¿Alguna vez imaginaste cómo sería pesar en Marte o la Júpiter? Ingresa tu peso en la Tierra y elige
+                        ¿Alguna vez imaginaste cómo sería pesar en Marte o la Júpiter? Ingresa tu peso en la Tierra y
+                        elige
                         tu destino celestial.
                         ¡Descubre tu peso intergaláctico y diviértete compartiendo estos datos curiosos con amigos y
                         familiares!
@@ -109,10 +112,12 @@
                         <label for="gravedad">Gravedad en m/s:</label>
                         <input type="number" id="gravedad" />
                         <br />
-                        
+
                         <input type="button" value="Calcular Peso" onclick="calcularPeso()">
                     </form>
                     <div id="resultadoPeso"></div>
+                    <br>
+                    <input type="button" value="Calcular otro" id="otroPeso" onclick="location.reload()" hidden>
                 </div>
                 <div class="fondo"></div>
             </article>
@@ -128,7 +133,9 @@
                         misteriosos, nuestro rincón cósmico te invita a descubrir los secretos más intrigantes del
                         espacio.
                     </p>
-                    <button onclick="mostrarDatoCurioso()">¡Dato curioso!</button>
+                    <form>
+                        <input type="button" value="¡Dato curioso!" onclick="mostrarDatoCurioso()">
+                    </form>
                     <br />
                     <span id="datoCurioso"></span>
                 </div>
@@ -145,7 +152,7 @@
                         para poner a prueba tus
                         conocimientos. ¡Aprender sobre el universo nunca fue tan divertido!
                     </p>
-                    <div id="pregunta1" class="pregunta">
+                    <form id="pregunta1" class="pregunta">
                         <p>Pregunta 1: ¿Cuál es el planeta más grande del sistema solar?</p>
                         <input type="radio" name="respuesta1" id="respuesta11" value="1" />
                         <label for="respuesta11">Mercurio</label>
@@ -156,10 +163,10 @@
                         <input type="radio" name="respuesta1" id="respuesta13" value="3" />
                         <label for="respuesta13">Venus</label>
                         <br>
-                        <button onclick="verificarRespuesta(1)">Siguiente</button>
-                    </div>
+                        <input type="button" value="Siguiente" onclick="verificarRespuesta(1)">
+                    </form>
 
-                    <div id="pregunta2" class="pregunta" hidden>
+                    <form id="pregunta2" class="pregunta" hidden>
                         <p>Pregunta 2: ¿Cuántas lunas tiene Marte?</p>
                         <input type="radio" name="respuesta2" id="respuesta21" value="1" />
                         <label for="respuesta21">0</label>
@@ -170,10 +177,10 @@
                         <input type="radio" name="respuesta2" id="respuesta23" value="3" />
                         <label for="respuesta23">1</label>
                         <br>
-                        <button onclick="verificarRespuesta(2)">Siguiente</button>
-                    </div>
+                        <input type="button" value="Siguiente" onclick="verificarRespuesta(2)">
+                    </form>
 
-                    <div id="pregunta3" class="pregunta" hidden>
+                    <form id="pregunta3" class="pregunta" hidden>
                         <p>Pregunta 3: ¿Cuál es la distancia promedio entre la Tierra y el Sol?</p>
                         <input type="radio" name="respuesta3" id="respuesta31" value="1" />
                         <label for="respuesta31">93 millones de millas</label>
@@ -184,10 +191,10 @@
                         <input type="radio" name="respuesta3" id="respuesta33" value="3" />
                         <label for="respuesta33">30 años luz</label>
                         <br>
-                        <button onclick="verificarRespuesta(3)">Siguiente</button>
-                    </div>
+                        <input type="button" value="Siguiente" onclick="verificarRespuesta(3)">
+                    </form>
 
-                    <div id="pregunta4" class="pregunta" hidden>
+                    <form id="pregunta4" class="pregunta" hidden>
                         <p>Pregunta 4: ¿Cuál es la galaxia más cercana a la Vía Láctea?</p>
                         <input type="radio" name="respuesta4" id="respuesta41" value="1" />
                         <label for="respuesta41">Andrómeda</label>
@@ -198,10 +205,10 @@
                         <input type="radio" name="respuesta4" id="respuesta43" value="3" />
                         <label for="respuesta43">Centaurus A</label>
                         <br>
-                        <button onclick="verificarRespuesta(4)">Siguiente</button>
-                    </div>
+                        <input type="button" value="Siguiente" onclick="verificarRespuesta(4)">
+                    </form>
 
-                    <div id="pregunta5" class="pregunta" hidden>
+                    <form id="pregunta5" class="pregunta" hidden>
                         <p>Pregunta 5: ¿Qué es un agujero negro?</p>
                         <input type="radio" name="respuesta5" id="respuesta51" value="1" />
                         <label for="respuesta51">Una estrella muy caliente</label>
@@ -212,13 +219,13 @@
                         <input type="radio" name="respuesta5" id="respuesta53" value="3" />
                         <label for="respuesta53">Una concentración masiva de masa en un espacio pequeño</label>
                         <br>
-                        <button onclick="verificarRespuesta(5)">Siguiente</button>
-                    </div>
+                        <input type="button" value="Siguiente" onclick="verificarRespuesta(5)">
+                    </form>
 
                     <div id="resultadoQuiz" class="pregunta" hidden>
                         <h2>¡Fin del cuestionario!</h2>
                         <p>Tu puntuación es <span id="puntuacion"></span> de 5.</p>
-                        <button id="reintentar" onclick="location.reload()">Reintentar</button>
+                        <input type="button" value="Reintentar" id="reintentar" onclick="location.reload()">
                     </div>
                 </div>
                 <div class="fondo"></div>
