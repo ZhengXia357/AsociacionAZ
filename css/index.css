@@ -7,7 +7,6 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 0, 0);
 
 }
 
@@ -97,18 +96,32 @@ body {
 
 .articuloIndex {
     height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100%;
+    background-image: url(../img/fondo-planeta-tierra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
-#cajaEsquiar{
-  background-image: url(../img/ESQUIAR.jpeg);
-  background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10%;
-    margin-top: 2%;
-    margin-left:2% ;
+.imagenSquiar{
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50px;
 }
+
+.cajaEsquiar{
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+}
+
 #h1Esquiar{
     color: #dcdcfc;
     font-size: 3rem;
@@ -129,6 +142,7 @@ body {
     grid-row: 2/5;
     grid-column: 2/6;
     font-size: 1.8rem;
+    font-weight: bolder;
 }
 #botonEsquiar{
     grid-row: 3/4;
@@ -139,11 +153,13 @@ body {
     justify-self: center;
     border-radius: 10%;
     cursor: pointer;
-    background-image: linear-gradient(to right, #1024DF, #222D94,#5c66c7, #222D94,#1024DF);
+    background-image: linear-gradient(to right, #b1b7eb, #f3f4ff,#f3f4ff, #f3f4ff,#b1b7eb);
     color: rgb(204, 212, 255);
     font-size: 1.2rem;
     font-weight: bolder;
     transition: background-color 0.3s, color 0.3s;
+    color: black;
+    font-weight: bolder;
 
 }
 #botonEsquiar:hover{
@@ -151,19 +167,16 @@ body {
 }
 .articuloIndex2{
    height: 100vh;
-   margin-top: 10%;
-   
+    
 }
+
 .div_articuloIndex1{
     background-image: url(../img/casaEuropaInterior.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    margin: 1%;
-    border-radius: 10%;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
-    grid-template-rows: repeat(6,1fr);
+   
 }
 #h1CasaLuna{
     color: rgb(255, 255, 255);
@@ -174,32 +187,50 @@ body {
     margin: 0;
     justify-self: center;
 }
+
+
 .articuloIndex3{
     height: 100vh;
-    grid-template-columns: repeat(2,1fr);
-    display: grid;
+    background-color: #111e75;
 }
-.div_articuloIndex3{
-    background-image: url(../img/AYUDANTES.jpeg);
-    height: 80%;
-    background-repeat: no-repeat;
-    background-size: 90% 90%;
-    margin-top: 5%;
-    margin-bottom: 5%;
 
+
+.articuloIndex3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100%;
+    background-image: url(../img/fondoRegistro.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.cajaImagenRoventa{
+    display: grid;
+   
+}
+.imagenRoventa{
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50px;
+}
+
+
 .h1Roventa{
     color: #dcdcfc;
-    grid-column: 2/4;
+    grid-column: 2/5;
     grid-row: 1/2;
-    font-size: 6rem;
+    font-size: 7rem;
     justify-self: center;
+    font-weight: bolder;
 }
 .parrafoZarus{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     grid-column: 2/5;
     grid-row: 2/5;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: bolder;
 }
 
 .div_roventa{
@@ -208,4 +239,39 @@ body {
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(4,1fr);
+}
+.articuloIndex4{
+    height: 30vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: black;
+}
+.buttonJugar{
+
+    width: 30%;
+    height: 30%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 5px 18px 2px #41457e ;
+    cursor: pointer;
+}
+.tituloJugar{
+    justify-self: center;
+    align-self: center;
+    color: #ffffff;
+    background-color: rgb(20, 45, 68);
+    padding: 30px;
+    border-radius: 30px;
+
+}
+.aButton{
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    
 }
