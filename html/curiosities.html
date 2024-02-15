@@ -56,8 +56,8 @@
                         estelares!
                     </p>
                     <form id="calculadoraTiempo">
-                        <label for="destino">¿A dónde tienes pensado ir?</label>
-                        <select name="destino" id="destino">
+                        <label for="destinoTiempo">¿A dónde tienes pensado ir?</label>
+                        <select name="destinoTiempo" id="destinoTiempo">
                             <option value="planetaAurora">Planeta Aurora</option>
                             <option value="nebulosaCelestial">Nebulosa Celestial</option>
                             <option value="galaxiaEspejismo">Galaxia Espejismo</option>
@@ -74,7 +74,7 @@
                         <input type="button" value="Calcular" onclick="calcularTiempoDeViaje()" />
                         <br />
                     </form>
-                    <span id="resultado"></span>
+                    <span id="resultadoTiempo"></span>
                 </div>
                 <div class="fondo"></div>
             </article>
@@ -85,7 +85,7 @@
                 <div>
                     <h2>Calculadora de peso en otros planetas: tu peso, tu mundo</h2>
                     <p>
-                        ¿Alguna vez imaginaste cómo sería pesar en Marte o la Luna? Ingresa tu peso en la Tierra y elige
+                        ¿Alguna vez imaginaste cómo sería pesar en Marte o la Júpiter? Ingresa tu peso en la Tierra y elige
                         tu destino celestial.
                         ¡Descubre tu peso intergaláctico y diviértete compartiendo estos datos curiosos con amigos y
                         familiares!
@@ -94,8 +94,8 @@
                         <label for="pesoTierra">Ingresa tu peso en la Tierra (en kilogramos):</label>
                         <input type="number" id="pesoTierra" required>
                         <br>
-                        <label for="planetas">Elige tu destino celestial:</label>
-                        <select id="planetas">
+                        <label for="destinoPeso">Elige tu destino celestial:</label>
+                        <select id="destinoPeso">
                             <option value="mercurio">Mercurio</option>
                             <option value="venus">Venus</option>
                             <option value="marte">Marte</option>
@@ -103,14 +103,16 @@
                             <option value="saturno">Saturno</option>
                             <option value="urano">Urano</option>
                             <option value="neptuno">Neptuno</option>
-                            <option value="pluton">Plutón</option>
                             <option value="otro" selected>Otro</option>
                         </select>
                         <br>
+                        <label for="gravedad">Gravedad en m/s:</label>
+                        <input type="number" id="gravedad" />
+                        <br />
                         
-                        <button onclick="calcularPeso()">Calcular Peso</button>
+                        <input type="button" value="Calcular Peso" onclick="calcularPeso()">
                     </form>
-                    <div id="resultado"></div>
+                    <div id="resultadoPeso"></div>
                 </div>
                 <div class="fondo"></div>
             </article>
