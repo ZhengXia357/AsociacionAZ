@@ -12,148 +12,148 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="./index.html"
-              ><img
-                src="../img/logoSinFondo.png"
-                alt="Logo de Stellar Us"
-                title="STELLAR US"
-            /></a>
-            <ul>
-              <li>
-                <a href="./destinations.html">Destinos</a>
-              </li>
-              <li class="activo"><span>Registrarse</span></li>
-              <li>
-                <a href="./experiencies.html">Experiencias</a>
-              </li>
-              <li>
-                <a href="./contact.html">Contacta</a>
-              </li>
-              <li>
-                <a href="./about.html">Conócenos</a>
-              </li>
-              <li>
-                <a href="./news.html">Noticias</a>
-              </li>
-            </ul>
-          </nav>
-    </header>
+  <header>
+    <nav>
+      <a href="./index.html"><img src="../img/logoSinFondo.png" alt="Logo de Stellar Us" title="STELLAR US" /></a>
+      <ul>
+        <li>
+          <a href="./destinations.html">Destinos</a>
+        </li>
+        <li class="activo"><span>Registrarse</span></li>
+        <li>
+          <a href="./experiencies.html">Experiencias</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contacta</a>
+        </li>
+        <li>
+          <a href="./about.html">Conócenos</a>
+        </li>
+        <li>
+          <a href="./news.html">Noticias</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="mainRegistro">
-  
-      <section class="section Izquierda">
-        <img src="../img/naveJuego.png" class="imagenJuego" id="imagen">
-      </section>
+  <main class="mainRegistro">
+
+    <section class="section Izquierda">
+      <video controls autoplay>
+        <source src="../video/videoUniverRegistro.mp4" type="video/mp4">
+      </video>
+    </section>
 
 
-  
 
-      <section class="section Derecha">
 
-        <form class="formularioRegistro">
 
-          <div class="cajaNombreForm">
-            <label class="labelNombreApellido" for="nombres">Nombre y Apellido</label>
-            <input type="text" class="input nombre" placeholder="  Nombre Completo" name="nombres" id="nombreInput">
-            <input type="text" class="input apellido" placeholder="  Apellido" name="nombres">
-          </div>
 
-          <div class="cajaIdentidadForm">
-            <label class="labelIdentidad" for="identidad">DNI / NIE</label>
-            <input type="text" class="input dni_nie" placeholder="  Documento" name="identidad">
-          </div>
-          <div class="cajaEmail">
-            <label class="labelEmail" for="correo">Correo Electronico</label>
-            <input type="email" class="input email" placeholder="  example@example.com" name="correo">
-          </div>
 
-          <div class="cajaCivil">
+    <section class="section Derecha">
 
-            <div class="cajaCivilHija">
-               <label class="labelEstado">Estado Civil</label>
+      <form class="formularioRegistro">
+
+        <div class="cajaNombreForm">
+          <label class="labelNombreApellido" for="nombres">Nombre y Apellido</label>
+          <input type="text" class="input nombre" placeholder="  Nombre Completo" name="nombres" id="nombreInput">
+          <input type="text" class="input apellido" placeholder="  Apellido" name="nombres">
+        </div>
+
+        <div class="cajaIdentidadForm">
+          <label class="labelIdentidad" for="identidad">DNI / NIE</label>
+          <input type="text" class="input dni_nie" placeholder="  Documento" name="identidad">
+        </div>
+        <div class="cajaEmail">
+          <label class="labelEmail" for="correo">Correo Electronico</label>
+          <input type="email" class="input email" placeholder="  example@example.com" name="correo">
+        </div>
+
+        <div class="cajaCivil">
+
+          <div class="cajaCivilHija">
+            <label class="labelEstado">Estado Civil</label>
             <select class="opciones">
               <option selected>soltero</option>
               <option>casado</option>
               <option>divoriciado</option>
             </select>
-            </div>
-
-              <div class="cajaCivilHija2">
-                <label class="labelDiasDispo">Disponibilidad</label>
-                <select class="diasOpc">
-                  <option selected>Lunes</option>
-                  <option>Martes</option>
-                  <option>Miercoles</option>
-                  <option>Jueves</option>
-                  <option>Viernes</option>
-                  <option>Sabado</option>
-                  <option>Domingo</option>
-                </select>
-              </div>
-            
-          </div>
-          
-
-          <div class="cajaTelefono">
-            <label class="labelTelefono">Telefono</label>
-            <input type="number" class="input number">
-          </div>
-   
-          <div class="cajaTextTarea">
-            <label class="labelTextArea" for="comentario">Observaciones</label>
-            <textarea name="comentario" class="textArea" ></textarea>
           </div>
 
-
-          <div class="cajaBotones">
-            <input type="reset" class="botones" onclick="validarInput()" value="Enviar">
-            <input type="reset"  class="botones">
+          <div class="cajaCivilHija2">
+            <label class="labelDiasDispo">Disponibilidad</label>
+            <select class="diasOpc">
+              <option selected>Lunes</option>
+              <option>Martes</option>
+              <option>Miercoles</option>
+              <option>Jueves</option>
+              <option>Viernes</option>
+              <option>Sabado</option>
+              <option>Domingo</option>
+            </select>
           </div>
 
-
-        </form>
-
-
-      </section>
+        </div>
 
 
+        <div class="cajaTelefono">
+          <label class="labelTelefono">Telefono</label>
+          <input type="number" class="input number">
+        </div>
 
-      <div class="popUp" id="popUp">
-        <img src="../img/logoStellarUs.jpg" class="imagenPop">
-        
-        <h2 class="h2Pop">¡Bienvenidx a Stellar US!</h2>
-        <p id="nombrePopUp"></p>
-        <button type="submit" class="botonPopUP" onclick="cerrarPopUp()">OK</button>
-      </div>
-
-    </main>
-
+        <div class="cajaTextTarea">
+          <label class="labelTextArea" for="comentario">Observaciones</label>
+          <textarea name="comentario" class="textArea"></textarea>
+        </div>
 
 
+        <div class="cajaBotones">
+          <input type="reset" class="botones" onclick="validarInput()" value="Enviar">
+          <input type="reset" class="botones">
+        </div>
 
 
+      </form>
 
 
-
-
+    </section>
 
 
 
+    <div class="popUp" id="popUp">
+      <img src="../img/logoStellarUs.jpg" class="imagenPop">
 
-    <footer>
-        <p>Propiedad de Stellar Us.&copy;</p></br>
-        <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</a></br>
-        <a href="mailto:pdcb02@educa.madrid.org">Contacta con Piero Dstefano Cisneros Bravo</a></br>
-        <a href="mailto:zhejiang.qiu@educa.madrid.org">Contacta con Zheng Xia Qiu Pan</a></br>
-        <a href="mailto:rpc_155@educa.madrid.org">Contacta con Rubén Pérez Cantal</a></br>
-        <a href="../html/contact.html">Contacta con el equipo de Stellar Us</a>
-    </footer>
+      <h2 class="h2Pop">¡Bienvenidx a Stellar US!</h2>
+      <p id="nombrePopUp"></p>
+      <button type="submit" class="botonPopUP" onclick="cerrarPopUp()">OK</button>
+    </div>
 
-    <script src="../js/registrer.js"></script>
+  </main>
 
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p>Propiedad de Stellar Us.&copy;</p></br>
+    <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank">IES Villablanca</a></br>
+    <a href="mailto:pdcb02@educa.madrid.org">Contacta con Piero Dstefano Cisneros Bravo</a></br>
+    <a href="mailto:zhejiang.qiu@educa.madrid.org">Contacta con Zheng Xia Qiu Pan</a></br>
+    <a href="mailto:rpc_155@educa.madrid.org">Contacta con Rubén Pérez Cantal</a></br>
+    <a href="../html/contact.html">Contacta con el equipo de Stellar Us</a>
+  </footer>
+
+  <script src="../js/registrer.js"></script>
+
+</body>
 
 
 </html>
