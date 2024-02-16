@@ -1,8 +1,11 @@
 var nombre = document.getElementById('nombreInput');
 console.log(nombre)
+var check = document.getElementById('check');
 
 var pop = document.getElementById('popUp')
 console.log(pop);
+
+
 var inputs = document.getElementsByTagName('input')
 console.log(inputs);
 
@@ -29,8 +32,9 @@ function validarInput(){
         }
 
     }
+    var checki = check.checked;
 
-    if(completos){
+    if(completos && checki){
         mostrarPopUp();
     }else{
         alert("Debes llenar todo los campos")
