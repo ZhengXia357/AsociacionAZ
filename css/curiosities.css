@@ -50,8 +50,7 @@ section div.fondo {
 
 form {
   padding: 20px 20px 0px 20px;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  text-align: start;
 }
 
 form label {
@@ -65,7 +64,6 @@ form select,
 form input {
   grid-column: 2;
   padding: 10px;
-  box-sizing: border-box;
   margin-bottom: 15px;
 }
 
@@ -78,6 +76,7 @@ input[type="button"] {
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
+  margin: 0px auto;
 }
 
 input[type="number"] {
@@ -122,4 +121,23 @@ form input:disabled {
 form input[type="button"]:hover {
   background-color: #001f3f;
   color: #ffcc00;
+}
+
+#datoCurioso {
+  margin: 10px;
+}
+
+form div {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1050px) {
+  label {
+    display: block;
+  }
+
+  #especial label {
+    display: initial;
+  }
 }

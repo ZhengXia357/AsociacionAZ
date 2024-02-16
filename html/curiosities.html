@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/logoICO.ico" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="../css/general.css" />
     <link type="text/css" rel="stylesheet" href="../css/curiosities.css" />
     <script type="text/javascript" src="../js/curiosities.js"></script>
@@ -71,7 +72,9 @@
                         <label for="velocidad">Velocidad en porcentaje de la velocidad de la luz:</label>
                         <input type="number" id="velocidad" max="100" value="50" />
                         <br />
-                        <input type="button" value="Calcular" onclick="calcularTiempoDeViaje()" />
+                        <div>
+                            <input type="button" value="Calcular" onclick="calcularTiempoDeViaje()" />
+                        </div>
                         <br />
                     </form>
                     <span id="resultadoTiempo"></span>
@@ -112,8 +115,9 @@
                         <label for="gravedad">Gravedad en m/s:</label>
                         <input type="number" id="gravedad" />
                         <br />
-
+                        <div>
                         <input type="button" value="Calcular Peso" onclick="calcularPeso()">
+                        </div>
                     </form>
                     <div id="resultadoPeso"></div>
                     <br>
@@ -134,7 +138,9 @@
                         espacio.
                     </p>
                     <form>
+                        <div>
                         <input type="button" value="¡Dato curioso!" onclick="mostrarDatoCurioso()">
+                        </div>
                     </form>
                     <br />
                     <span id="datoCurioso"></span>
@@ -143,7 +149,7 @@
             </article>
         </section>
         <section>
-            <article>
+            <article id="especial">
                 <div class="fondo"></div>
                 <div>
                     <h2>Interactividad educativa: desafía tu conocimiento</h2>
