@@ -132,12 +132,9 @@ body {
 }
 
 
-
-
 .div_derecha_Articulo_Index{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(3,1fr);}
     grid-template-rows: repeat(3,1fr);}
 
 #parrafoEsquiar{
@@ -178,14 +175,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    margin: 1%;
-    border-radius: 10%;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
-    grid-template-rows: repeat(6,1fr);
+   
 }
 #h1CasaLuna{
-    color: rgba(48, 62, 143, 0.438);
+    color: rgb(255, 255, 255);
     font-family: h1Index;
     font-size: 5rem;
     grid-column: 1/7;
@@ -193,32 +187,50 @@ body {
     margin: 0;
     justify-self: center;
 }
+
+
 .articuloIndex3{
     height: 100vh;
-    grid-template-columns: repeat(2,1fr);
-    display: grid;
+    background-color: #111e75;
 }
-.div_articuloIndex3{
-    background-image: url(../img/AYUDANTES.jpeg);
-    height: 80%;
-    background-repeat: no-repeat;
-    background-size: 90% 90%;
-    margin-top: 5%;
-    margin-bottom: 5%;
 
+
+.articuloIndex3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100%;
+    background-image: url(../img/fondoRegistro.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.cajaImagenRoventa{
+    display: grid;
+   
+}
+.imagenRoventa{
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50px;
+}
+
+
 .h1Roventa{
     color: #dcdcfc;
-    grid-column: 2/4;
+    grid-column: 2/5;
     grid-row: 1/2;
-    font-size: 6rem;
+    font-size: 7rem;
     justify-self: center;
+    font-weight: bolder;
 }
 .parrafoZarus{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     grid-column: 2/5;
     grid-row: 2/5;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: bolder;
 }
 
 .div_roventa{
@@ -227,4 +239,39 @@ body {
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(4,1fr);
+}
+.articuloIndex4{
+    height: 30vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: black;
+}
+.buttonJugar{
+
+    width: 30%;
+    height: 30%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 5px 18px 2px #41457e ;
+    cursor: pointer;
+}
+.tituloJugar{
+    justify-self: center;
+    align-self: center;
+    color: #ffffff;
+    background-color: rgb(20, 45, 68);
+    padding: 30px;
+    border-radius: 30px;
+
+}
+.aButton{
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    
 }
