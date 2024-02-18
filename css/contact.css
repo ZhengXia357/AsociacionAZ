@@ -16,9 +16,15 @@
   padding-right: 5%;
 }
 
+textarea {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  resize: vertical;
+}
+
 #mapa{
   width: 110%;
-
 }
 
 #boton{
