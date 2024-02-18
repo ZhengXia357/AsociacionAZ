@@ -16,7 +16,7 @@ function mostrarVentanaCookies() {
                 <h2><font face="Verdana, Geneva, Tahoma, sans-serif"> En StellarUs utilizamos cookies para mejorar la experiencia del usuario. Al continuar navegando por este sitio, aceptas nuestro uso de cookies. <a href="../html/coockie.html">Leer más</a></font></h2>
                 </td>
                 <td>
-                <a href="./index.html"><img src="../img/logoSinFondo.png" alt="Logo de Stellar Us" title="STELLAR US" width="150px" height="150px" style="padding: 30px;"/></a>
+                <a href="./index.html"><img src="../img/logoSinFondo.png" alt="Logo de Stellar Us" title="STELLAR US" width="150px" height="150px" style="margin: 30px;"/></a>
                 </td>
                 </tr>
                </table>

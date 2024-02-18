@@ -22,6 +22,14 @@ body {
     border-radius: 50%;
 }
 
+#logoIndex{
+    height: 60%;
+}
+
+#divLogoIndex{
+    
+}
+
 .item-2 {
     flex-grow: 1;
     display: flex;
