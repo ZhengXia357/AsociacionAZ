@@ -1,18 +1,214 @@
-  #contacto{
-    text-align: justify;
-    font-size: larger;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 135%;
-    padding: auto;
-    padding-left: 15%;
-    padding-right: 15%;
-  }
+body{
+  background-image: url(../img/ESTRELLAS_FONDOS.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.principal{
 
-  #mapa{
-    width: 110%;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40% 1fr;
 
   }
+.primeraSection{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fondoConctacUs.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -585px;
+}
+.segundaSection{
+  background-color: #0b2846;
+  width: 70%;
+  height: 900px;
+  justify-self: center;
+  position: relative;
+  top: -15%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 270px 270px 400px;
+  background-image: url(../img/ESTRELLAS_FONDOS.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.div{
+  width: 380px;
+  height: 230px;
+  background: linear-gradient(0.25turn, #0f3c69, #adc2d8, #0f3c69);  
+  justify-self: center;
+  align-self: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 5px;
+
+}
+.Uno{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  transition: transform .5s;
+}
+.Uno:hover{
+
+  transform: scale(1.3);
+
+}
+.Dos:hover{
+  transform: scale(1.3);
+
+}
+.tituloLlamanos,.numeroTelefono {
+  margin: 0;
+  font-size: 2rem;
+}
+.numeroTelefono{
+  margin-bottom: 10%;
+  border-radius: 30px;
+  padding: 30px;
+}
+.tituloLlamanos{
+  justify-self: center;
+}
+
+
+.Dos{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  justify-content: center;
+  transition: transform .5s;
+}
+.buttonIrRegistro{
+  width: 100%;
+  height: 70px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
   
-  #boton{
-    text-align: justify;
-  }
+}
+.aButton{
+  align-self: center;  
+  width: 100%;
+}
+.tituloIrRegistro{
+  justify-self: center;
+  
+}
+.divForm{
+  width: 80%;
+  height:90% ;
+  background: linear-gradient(0.25turn, #0f3c69, #adc2d8, #0f3c69);  
+  grid-column: 2/3;
+  grid-row: 1/3;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-rows: 25% 75%;
+  box-shadow: 5px 5px 20px 5px;
+
+}
+
+.parrafoContacto{
+  margin: 5%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.divMapa{
+  grid-row: 3/4;
+  grid-column: 1/3;
+  width: 90%;
+  height: 85%;
+  border-radius: 30px;
+  justify-self: center;
+}
+.mapaFrame{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+
+}
+.footer{
+  margin-top: 226px;
+}
+.miniFormulario{
+  height: 90%;
+  width: 90%;
+  display: grid;
+  justify-self: center;
+  align-self: center; 
+  grid-template-rows: repeat(5,1fr);
+}
+.labelPrimerFila{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+.labelNombre{
+  margin-top: 1%;
+  font-size: 1.2rem;
+  grid-column: 1/3;
+  margin-left: 2%;
+}
+.input{
+  height: 25px;
+  border-radius: 20px;
+  width: 150px;
+}
+.uno{
+  grid-row: 2/3;
+  justify-self: center;
+}
+.dos{
+  grid-row: 2/3;
+  justify-self: center;
+
+}
+.labelSegundaFila{
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-self: center;
+  justify-items: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.labelTerceraFila{
+  grid-row: 3/5;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-rows: 20% 80%;
+ }
+.labelArea{
+  justify-self: center;
+  font-size: 1.2rem;
+}
+.textAreaContacto{
+  height: 80%;
+  border-radius: 10px;
+  min-width: 335px;
+  max-width: 335px;
+  min-height: 100px;
+  max-height: 100px;
+  justify-self: center;
+}
+.labelCuleaFila{
+  grid-row: 5/6;
+  justify-self: center;
+  align-self: center;
+  justify-self: center;
+  align-self: center;
+
+}
+.input_button{
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+label{
+  color: rgb(22, 22, 22);
+  font-weight: bolder;
+}
