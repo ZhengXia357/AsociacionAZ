@@ -15,7 +15,11 @@ section article {
     text-align: center;
     border-radius: 20px;
     margin: 2%;
+}
 
+section article:first-child,
+article *:not(img) {
+    padding: 15px;
 }
 
 section article:nth-child(even) img {

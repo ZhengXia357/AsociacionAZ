@@ -32,7 +32,7 @@ header nav ul {
     margin: 0px;
     list-style-type: none;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
     grid-column: 3;
     justify-content: start;
 }
@@ -91,7 +91,7 @@ header nav ul li a:hover {
 
 @media only screen and (max-width: 1000px) {
     body header nav ul {
-        grid-template-rows: 51px 51px 51px 51px 51px 51px 51px 51px;
+        grid-template-rows: 51px 51px 51px 51px 51px 51px 51px;
         grid-template-columns: auto;
         justify-content: start;
         text-align: right;
