@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/logoICO.ico" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="../css/general.css" />
     <link type="text/css" rel="stylesheet" href="../css/curiosities.css" />
     <script type="text/javascript" src="../js/curiosities.js"></script>
@@ -44,39 +45,193 @@
         <section>
             <article>
                 <div class="fondo"></div>
-                <h2>Calculadora de Tiempo de Viaje: Descubre tu viaje</h2>
-                <p>¿Te preguntas cuánto tiempo tardarías en llegar a planetas lejanos? Ingresa la velocidad de tu nave y
-                    selecciona tu destino. Te sorprenderás con las estimaciones de tiempo detalladas, ¡perfectas para
-                    planificar tus próximas aventuras estelares!</p>
+                <div>
+                    <h2>Calculadora de Tiempo de Viaje: Descubre tu viaje</h2>
+                    <p>
+                        ¿Te preguntas cuánto tiempo tardarías en llegar a planetas lejanos? Ingresa la velocidad de tu
+                        nave y selecciona tu
+                        destino. Te sorprenderás con las estimaciones de tiempo detalladas, ¡perfectas para planificar
+                        tus próximas aventuras
+                        estelares!
+                    </p>
+                    <form id="calculadoraTiempo">
+                        <label for="destinoTiempo">¿A dónde tienes pensado ir?</label>
+                        <select name="destinoTiempo" id="destinoTiempo">
+                            <option value="planetaAurora">Planeta Aurora</option>
+                            <option value="nebulosaCelestial">Nebulosa Celestial</option>
+                            <option value="galaxiaEspejismo">Galaxia Espejismo</option>
+                            <option value="lunaEspectral">Luna Espectral</option>
+                            <option value="otro" selected>Otro</option>
+                        </select>
+                        <br />
+                        <label for="distancia">Distancia a recorrer en años luz:</label>
+                        <input type="number" id="distancia" />
+                        <br />
+                        <label for="velocidad">Velocidad en porcentaje de la velocidad de la luz:</label>
+                        <input type="number" id="velocidad" max="100" value="50" />
+                        <br />
+                        <div>
+                            <input type="button" value="Calcular" onclick="calcularTiempoDeViaje()" />
+                        </div>
+                        <br />
+                    </form>
+                    <span id="resultadoTiempo"></span>
+                    <br>
+                    <input type="button" value="Calcular otro" id="otroTiempo" onclick="location.reload()" hidden>
+                </div>
                 <div class="fondo"></div>
             </article>
         </section>
         <section>
             <article>
                 <div class="fondo"></div>
-                <h2>Calculadora de Peso en Otros Planetas: Tu peso, tu mundo</h2>
-                <p>¿Alguna vez imaginaste cómo sería pesar en Marte o la Luna? Ingresa tu peso en la Tierra y elige tu
-                    destino celestial. ¡Descubre tu peso intergaláctico y diviértete compartiendo estos datos curiosos
-                    con amigos y familiares!</p>
+                <div>
+                    <h2>Calculadora de peso en otros planetas: tu peso, tu mundo</h2>
+                    <p>
+                        ¿Alguna vez imaginaste cómo sería pesar en Marte o la Júpiter? Ingresa tu peso en la Tierra y
+                        elige
+                        tu destino celestial.
+                        ¡Descubre tu peso intergaláctico y diviértete compartiendo estos datos curiosos con amigos y
+                        familiares!
+                    </p>
+                    <form id="calculadoraPeso">
+                        <label for="pesoTierra">Ingresa tu peso en la Tierra (en kilogramos):</label>
+                        <input type="number" id="pesoTierra" required>
+                        <br>
+                        <label for="destinoPeso">Elige tu destino celestial:</label>
+                        <select id="destinoPeso">
+                            <option value="mercurio">Mercurio</option>
+                            <option value="venus">Venus</option>
+                            <option value="marte">Marte</option>
+                            <option value="jupiter">Júpiter</option>
+                            <option value="saturno">Saturno</option>
+                            <option value="urano">Urano</option>
+                            <option value="neptuno">Neptuno</option>
+                            <option value="otro" selected>Otro</option>
+                        </select>
+                        <br>
+                        <label for="gravedad">Gravedad en m/s:</label>
+                        <input type="number" id="gravedad" />
+                        <br />
+                        <div>
+                        <input type="button" value="Calcular Peso" onclick="calcularPeso()">
+                        </div>
+                    </form>
+                    <div id="resultadoPeso"></div>
+                    <br>
+                    <input type="button" value="Calcular otro" id="otroPeso" onclick="location.reload()" hidden>
+                </div>
                 <div class="fondo"></div>
             </article>
         </section>
         <section>
             <article>
                 <div class="fondo"></div>
-                <h2>Datos Curiosos del Espacio: Explora el cosmos</h2>
-                <p>Sumérgete en tarjetas informativas llenas de curiosidades fascinantes. Desde tormentas en Júpiter
-                    hasta agujeros negros misteriosos, nuestro rincón cósmico te invita a descubrir los secretos más
-                    intrigantes del espacio.</p>
+                <div>
+                    <h2>Datos curiosos del espacio: explora el cosmos</h2>
+                    <p>
+                        Sumérgete en tarjetas informativas llenas de curiosidades fascinantes. Desde tormentas en
+                        Júpiter hasta agujeros negros
+                        misteriosos, nuestro rincón cósmico te invita a descubrir los secretos más intrigantes del
+                        espacio.
+                    </p>
+                    <form>
+                        <div>
+                        <input type="button" value="¡Dato curioso!" onclick="mostrarDatoCurioso()">
+                        </div>
+                    </form>
+                    <br />
+                    <span id="datoCurioso"></span>
+                </div>
                 <div class="fondo"></div>
             </article>
         </section>
         <section>
-            <article>
+            <article id="especial">
                 <div class="fondo"></div>
-                <h2>Interactividad Educativa: Desafía tu conocimiento</h2>
-                <p>¿Te consideras un experto del espacio? Participa en nuestros cuestionarios y juegos educativos para
-                    poner a prueba tus conocimientos. ¡Aprender sobre el universo nunca fue tan divertido!</p>
+                <div>
+                    <h2>Interactividad educativa: desafía tu conocimiento</h2>
+                    <p>
+                        ¿Te consideras un experto del espacio? Participa en nuestros cuestionarios y juegos educativos
+                        para poner a prueba tus
+                        conocimientos. ¡Aprender sobre el universo nunca fue tan divertido!
+                    </p>
+                    <form id="pregunta1" class="pregunta">
+                        <p>Pregunta 1: ¿Cuál es el planeta más grande del sistema solar?</p>
+                        <input type="radio" name="respuesta1" id="respuesta11" value="1" />
+                        <label for="respuesta11">Mercurio</label>
+                        <br>
+                        <input type="radio" name="respuesta1" id="respuesta12" value="2" />
+                        <label for="respuesta12">Júpiter</label>
+                        <br>
+                        <input type="radio" name="respuesta1" id="respuesta13" value="3" />
+                        <label for="respuesta13">Venus</label>
+                        <br>
+                        <input type="button" value="Siguiente" onclick="verificarRespuesta(1)">
+                    </form>
+
+                    <form id="pregunta2" class="pregunta" hidden>
+                        <p>Pregunta 2: ¿Cuántas lunas tiene Marte?</p>
+                        <input type="radio" name="respuesta2" id="respuesta21" value="1" />
+                        <label for="respuesta21">0</label>
+                        <br>
+                        <input type="radio" name="respuesta2" id="respuesta22" value="2" />
+                        <label for="respuesta22">2</label>
+                        <br>
+                        <input type="radio" name="respuesta2" id="respuesta23" value="3" />
+                        <label for="respuesta23">1</label>
+                        <br>
+                        <input type="button" value="Siguiente" onclick="verificarRespuesta(2)">
+                    </form>
+
+                    <form id="pregunta3" class="pregunta" hidden>
+                        <p>Pregunta 3: ¿Cuál es la distancia promedio entre la Tierra y el Sol?</p>
+                        <input type="radio" name="respuesta3" id="respuesta31" value="1" />
+                        <label for="respuesta31">93 millones de millas</label>
+                        <br>
+                        <input type="radio" name="respuesta3" id="respuesta32" value="2" />
+                        <label for="respuesta32">150 millones de kilómetros</label>
+                        <br>
+                        <input type="radio" name="respuesta3" id="respuesta33" value="3" />
+                        <label for="respuesta33">30 años luz</label>
+                        <br>
+                        <input type="button" value="Siguiente" onclick="verificarRespuesta(3)">
+                    </form>
+
+                    <form id="pregunta4" class="pregunta" hidden>
+                        <p>Pregunta 4: ¿Cuál es la galaxia más cercana a la Vía Láctea?</p>
+                        <input type="radio" name="respuesta4" id="respuesta41" value="1" />
+                        <label for="respuesta41">Andrómeda</label>
+                        <br>
+                        <input type="radio" name="respuesta4" id="respuesta42" value="2" />
+                        <label for="respuesta42">Triángulo</label>
+                        <br>
+                        <input type="radio" name="respuesta4" id="respuesta43" value="3" />
+                        <label for="respuesta43">Centaurus A</label>
+                        <br>
+                        <input type="button" value="Siguiente" onclick="verificarRespuesta(4)">
+                    </form>
+
+                    <form id="pregunta5" class="pregunta" hidden>
+                        <p>Pregunta 5: ¿Qué es un agujero negro?</p>
+                        <input type="radio" name="respuesta5" id="respuesta51" value="1" />
+                        <label for="respuesta51">Una estrella muy caliente</label>
+                        <br>
+                        <input type="radio" name="respuesta5" id="respuesta52" value="2" />
+                        <label for="respuesta52">Una región del espacio sin gravedad</label>
+                        <br>
+                        <input type="radio" name="respuesta5" id="respuesta53" value="3" />
+                        <label for="respuesta53">Una concentración masiva de masa en un espacio pequeño</label>
+                        <br>
+                        <input type="button" value="Siguiente" onclick="verificarRespuesta(5)">
+                    </form>
+
+                    <div id="resultadoQuiz" class="pregunta" hidden>
+                        <h2>¡Fin del cuestionario!</h2>
+                        <p>Tu puntuación es <span id="puntuacion"></span> de 5.</p>
+                        <input type="button" value="Reintentar" id="reintentar" onclick="location.reload()">
+                    </div>
+                </div>
                 <div class="fondo"></div>
             </article>
         </section>
