@@ -11,6 +11,7 @@ body {
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 8% 92%;
 }
 
 .section {
@@ -184,7 +185,7 @@ label {
 
 .cajaCivilHija2 {
     display: grid;
-
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .diasOpc {
@@ -203,8 +204,38 @@ label {
     margin-bottom: 4%;
     justify-self: center;
     margin-right: 10%;
+    grid-column: 1/3;
 
 }
+
+.cajaTitulo {
+    grid-column: 1/3;
+
+
+}
+
+.tituloR {
+    font-family: monospace;
+    border-right: 4px solid;
+    color: #c2d1fc;
+    font-size: 1.9rem;
+    text-align: center;
+    animation: mover 2s;
+    margin-top: 5%;
+}
+
+@keyframes mover {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translatey(30px);
+
+    }
+}
+
+
 
 .cajaTelefono {
     grid-row: 5/6;
@@ -315,10 +346,12 @@ label {
     justify-self: center;
     font-size: 2rem;
 }
-.cajaCheckBox{
+
+.cajaCheckBox {
     justify-self: center;
     align-self: center;
 }
-.privacidad{
+
+.privacidad {
     color: black;
 }
