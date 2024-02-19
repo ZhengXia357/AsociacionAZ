@@ -37,7 +37,7 @@ function validarInput(){
     if(completos && checki){
         mostrarPopUp();
     }else{
-        alert("Debes llenar todo los campos")
+        alert("Debes rellenar todo los campos")
     }
     
 

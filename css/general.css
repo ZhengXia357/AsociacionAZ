@@ -32,7 +32,7 @@ header nav ul {
     margin: 0px;
     list-style-type: none;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
     grid-column: 3;
     justify-content: start;
 }
