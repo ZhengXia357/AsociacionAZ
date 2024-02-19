@@ -15,12 +15,47 @@
   padding-left: 5%;
   padding-right: 5%;
 }
-
+input[type="reset"] {
+  grid-column: 1 / span 2;
+  background-color: #ffcc00;
+  color: #001f3f;
+  padding: 15px;
+  border:#ffcc00 solid 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0px auto;
+}
+input[type="submit"] {
+  grid-column: 1 / span 2;
+  background-color: #ffcc00;
+  color: #001f3f;
+  padding: 15px;
+  border:#ffcc00 solid 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0px auto;
+}
+form input[type="reset"]:hover {
+  background-color: #001f3f;
+  color: #ffcc00;
+}
+form input[type="submit"]:hover {
+  background-color: #001f3f;
+  color: #ffcc00;
+}
+input{
+  border:#ffcc00 solid 1px;
+  border-radius: 20px;
+}
 textarea {
+  border:#ffcc00 solid 1px;
   width: 100%;
   height: auto;
   max-width: 100%;
   resize: vertical;
+  border-radius: 20px;
 }
 
 #mapa{
