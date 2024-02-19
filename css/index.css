@@ -22,6 +22,21 @@ body {
     border-radius: 50%;
 }
 
+#logoIndex{
+    height: 300px;
+}
+
+#divLogoIndex{
+    margin-left: 15%;
+    height: 70%;
+
+}
+
+#colocacionTitulo{
+    
+
+}
+
 .item-2 {
     flex-grow: 1;
     display: flex;
@@ -89,6 +104,7 @@ body {
     grid-row: 3/4;
     justify-self: start;
     margin-top: 4%;
+    margin-left:15%;
     margin-bottom: 0;
     font-size: 3vh;
 
@@ -275,3 +291,119 @@ body {
     display: grid;
     
 }
+#tituloCalendario{
+    text-align: center;
+}
+#calendario{
+    border-radius: 20px;
+    margin: 2%;
+    text-align: center;
+    font-size: larger;
+    background-color: #001f3f;
+    color: #fff;
+    text-align: justify;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 135%;
+    padding: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .calendar {
+    width: 300px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+    padding: 50px;
+    text-align: center;
+    border: 1px solid #FFD700;
+}
+
+.calendar th {
+    background-color: #FFD700;
+}
+
+.event {
+    background-color: #faf2c2;
+    color: #001F3F;
+    font-weight: bold;
+    position: relative;
+
+}
+.eventBlanco {
+    background-color: #FFFFFF;
+    color: #001F3F;
+    font-weight: bold;
+    position: relative;
+}
+.eventBlanco .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    background-color: #094a8b;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 20;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .eventBlanco .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .eventBlanco:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .event .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    background-color: #094a8b;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .event .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .event:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }

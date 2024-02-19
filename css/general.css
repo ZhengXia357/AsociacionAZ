@@ -2,6 +2,7 @@ body {
     margin: 0px;
     display: grid;
     grid-template-rows: auto auto auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header h1 {
@@ -31,7 +32,7 @@ header nav ul {
     margin: 0px;
     list-style-type: none;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
     grid-column: 3;
     justify-content: start;
 }
@@ -39,7 +40,7 @@ header nav ul {
 header nav ul li a,
 .activo span {
     font-family: "Orbitron";
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: #fff;
     padding: 20px 25px;
@@ -59,7 +60,7 @@ header nav ul li a:hover {
     border-radius: 15px 15px 0px 0px;
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1500px) {
     header nav ul li a,
     .activo span {
         font-size: 15px;
@@ -76,7 +77,7 @@ header nav ul li a:hover {
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1200px) {
     header nav ul li a,
     .activo span {
         font-size: 15px;
@@ -88,9 +89,9 @@ header nav ul li a:hover {
     }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1000px) {
     body header nav ul {
-        grid-template-rows: 51px 51px 51px 51px 51px 51px;
+        grid-template-rows: 51px 51px 51px 51px 51px 51px 51px;
         grid-template-columns: auto;
         justify-content: start;
         text-align: right;
@@ -116,7 +117,7 @@ header nav ul li a:hover {
     .activo span {
         border-radius: 15px 0px 0px 15px;
     }
-    
+
     header nav ul li a:hover {
         background-color: #001f3f;
         color: #ffd700;
@@ -129,11 +130,26 @@ main {
 }
 
 footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
     background-color: #000;
 }
 
-footer p {
-    color: #FFF;
+footer div>a {
+    font-weight: bold;
+}
+
+footer div:first-child img {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 40px
+}
+
+footer div:last-child {
+    font-size: 70%;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 a {
