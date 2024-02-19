@@ -6,27 +6,27 @@ var pop = document.getElementById('popUp')
 console.log(pop);
 
 
-var inputs = document.getElementsByTagName('input')
+var inputs = document.getElementsByClassName('input')
 console.log(inputs);
 
-function mostrarPopUp(){
+function mostrarPopUp() {
 
     pop.classList.add("mostrar-pop");
-    document.getElementById('nombrePopUp').innerHTML= nombre.value;
+    document.getElementById('nombrePopUp').innerHTML = nombre.value;
 
 }
-function cerrarPopUp(){
+function cerrarPopUp() {
     pop.classList.remove("mostrar-pop");
 }
 
 
 
-function validarInput(){
+function validarInput() {
 
     var completos = true;
-    for(let i = 0;i<inputs.length-2;i++){
+    for (let i = 0; i < inputs.length - 2; i++) {
 
-        if(inputs[i].value.trim()==""){
+        if (inputs[i].value.trim() == "") {
 
             completos = false;
         }
@@ -34,11 +34,11 @@ function validarInput(){
     }
     var checki = check.checked;
 
-    if(completos && checki){
+    if (completos && checki) {
         mostrarPopUp();
-    }else{
+    } else {
         alert("Debes llenar todo los campos")
     }
-    
+
 
 }
